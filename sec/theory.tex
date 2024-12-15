@@ -56,3 +56,57 @@
         b_j=\sum_{i} v_{ij},\quad \forall j.
     \end{equation}
 \end{frame}
+
+\begin{frame}{The Kantorovich formulation}
+    \footnotesize
+    To give an general formulation of OT, 
+    we first recall the three main scenarios for OT.
+
+    \begin{figure}
+        \captionsetup{font=scriptsize}
+        \centering
+        \includegraphics[width=0.6\textwidth]{png/3TypesOfOT.png}
+    \end{figure}
+
+    \pause
+    Given two probability measures $\mu$ on $\mX$ and $\nu$ on $\mY$, and a 
+    cost function $c(x,y)$. 
+    The Kantorovich formulation\footfullcite{Kantorovich1942} of OT is 
+    \begin{equation}
+        \mL_c(\mu,\nu)=\min_\pi \; \int_{\mX\times \mY} c(x,y) \;d\pi(x,y),
+    \end{equation}
+    where $\pi$ is a measure on $\mX\times \mY$, whose
+    marginals are $\mu$ and $\nu$, that is,
+    \begin{equation}
+        \mu = \int_{\mY} \pi(\cdot, y) \;dy,\qquad 
+        \nu = \int_{\mX} \pi(x, \cdot) \;dx.
+    \end{equation}
+\end{frame}
+
+\begin{frame}{Metric properties of OT}
+    \footnotesize
+    Here we assume $\mX=\mY$ and $c(x,y)=d(x,y)^p\;(p>1)$, where $d$ is a distance on $\mX$.
+    Denote $\pbms$ the set of probability measures on $\mX$.
+
+    \pause
+    \begin{Thm}[Wasserstein distance]
+        Under the above assumptions, $\mL_c(\mu,\nu)^{1/p}$ is a distance on $\pbms$.
+    \end{Thm}
+
+    The distance $\wass_p(\mu,\nu):=\mL_c(\mu,\nu)^{1/p}$ is called $p$-Wasserstein distance.
+
+    \pause
+
+    \begin{Def}[Weak convergence]
+        Assume $\mX$ is compact. Say $(\mu_k)_{k\geq 1}\subset \pbms$ converges
+        weakly to $\mu\in\pbms$ if
+        \begin{equation}
+            \int_{\mX} g\;d\mu_k \to \int_{\mX}g\;d\mu,\quad \forall g\in\cfun.
+        \end{equation}
+    \end{Def}
+
+    \begin{Thm}[Wasserstein distance and weak convergence\footfullcite{Villani2009}]
+        On a compact domain $\mX$, $(\mu_k)_{k\geq 1}\subset \pbms$ converges 
+        weakly to $\mu\in\pbms$ if and only if $\wass_p(\mu_k,\nu)\to 0$.
+    \end{Thm}
+\end{frame}
