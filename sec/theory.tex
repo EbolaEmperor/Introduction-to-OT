@@ -57,9 +57,75 @@
     \end{equation}
 \end{frame}
 
+\begin{frame}{The Monge formulation}
+    \scriptsize
+    Denote $\pbms$ the set of probability measures on $\mX$.
+
+    \begin{Def}[push-forward]
+        Suppose $\mu\in\pbms$ and a map $T:\mX\to\mY$. 
+        Say $\nu\in\pbmsy$ is the push-forward of $\mu$ by $T$ if
+
+        \vspace{-.8em}
+        \begin{equation}
+            \int_\mY h(y)\;d\nu(y) = \int_\mX h(T(x))\; d\mu(x),
+            \quad \forall h\in\cfuny.
+        \end{equation}
+
+        \vspace{-.5em}
+        Write $T_\#\mu := \nu$.
+    \end{Def}
+
+    \vspace{-1.3em}
+    \begin{figure}
+        \captionsetup{font=scriptsize}
+        \begin{minipage}[c]{0.5\linewidth}
+            \vspace{0pt}
+            \begin{Exm}[push-forward of a discrete measure]
+                Suppose $\alpha$ is a discrete measure
+
+                \vspace{-1em}
+                \begin{equation*}
+                    \alpha = \sum_{i=1}^n a_i\delta_{x_i}.
+                \end{equation*}
+
+                \vspace{-.5em}
+                Then the push-forward of $\alpha$ by $T$ is
+
+                \vspace{-1em}
+                \begin{equation*}
+                    T_\#\alpha = \sum_{i=1}^n a_i\delta_{T(x_i)}.
+                \end{equation*}
+            \end{Exm}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[c]{0.45\linewidth}
+            \vspace{0pt}
+            \centering
+            \includegraphics[width=0.42\textwidth]{png/push-forward.png}
+            \caption{push-forward of a discrete measure}
+        \end{minipage}
+    \end{figure}
+
+    \pause
+    \vspace{-1em}
+    Given two probability measures $\mu$ on $\mX$ and $\nu$ on $\mY$, and a 
+    cost function $c(x,y)$. 
+    Optimal transport could be generally formulated as the 
+    Monge problem:
+
+    \vspace{-.2em}
+    \begin{equation}
+        \min_T\;\left\{\int_\mX c(x,T(x))\;d\mu(x) : T_\#\mu = \nu \right\}
+    \end{equation}
+
+    \vspace{-.5em}
+    The Monge problem between discrete measures is 
+    introduced by Monge\footfullcite{Monge1781}.
+\end{frame}
+
 \begin{frame}{The Kantorovich formulation}
     \footnotesize
-    To give an general formulation of OT, 
+    Here's another general formulation of OT, 
     we first recall the three main scenarios for OT.
 
     \begin{figure}
@@ -71,7 +137,8 @@
     \pause
     Given two probability measures $\mu$ on $\mX$ and $\nu$ on $\mY$, and a 
     cost function $c(x,y)$. 
-    The Kantorovich formulation\footfullcite{Kantorovich1942} of OT is 
+    Optimal transport could be generally formulated as
+    the Kantorovich problem\footfullcite{Kantorovich1942}:
     \begin{equation}
         \mL_c(\mu,\nu)=\min_\pi \; \int_{\mX\times \mY} c(x,y) \;d\pi(x,y),
     \end{equation}
@@ -83,10 +150,9 @@
     \end{equation}
 \end{frame}
 
-\begin{frame}{Metric properties of OT}
+\begin{frame}{Wasserstein disrtance}
     \footnotesize
-    Here we assume $\mX=\mY$ and $c(x,y)=d(x,y)^p\;(p>1)$, where $d$ is a distance on $\mX$.
-    Denote $\pbms$ the set of probability measures on $\mX$.
+    Here we suppose $\mX=\mY$ and $c(x,y)=d(x,y)^p\;(p>1)$, where $d$ is a distance on $\mX$.
 
     \pause
     \begin{Thm}[Wasserstein distance]
@@ -97,8 +163,8 @@
 
     \pause
 
-    \begin{Def}[Weak convergence]
-        Assume $\mX$ is compact. Say $(\mu_k)_{k\geq 1}\subset \pbms$ converges
+    \begin{Def}[weak convergence]
+        Suppose $\mX$ is compact. Say $(\mu_k)_{k\geq 1}\subset \pbms$ converges
         weakly to $\mu\in\pbms$ if
         \begin{equation}
             \int_{\mX} g\;d\mu_k \to \int_{\mX}g\;d\mu,\quad \forall g\in\cfun.
@@ -109,4 +175,63 @@
         On a compact domain $\mX$, $(\mu_k)_{k\geq 1}\subset \pbms$ converges 
         weakly to $\mu\in\pbms$ if and only if $\wass_p(\mu_k,\nu)\to 0$.
     \end{Thm}
+\end{frame}
+
+\begin{frame}{Equivalence between the Kantorovich and Monge problems}
+    \scriptsize
+    \begin{Thm}[Kantorovich dual problem]
+        The Kantorovich problem can be solved in the dual space by
+
+        \vspace{-.7em}
+        \begin{equation}
+            \mL_c(\mu,\nu)=\sup_{(f,g)\in \mathcal{R}(c)} 
+            \int_\mX f(x)\;d\mu(x) + \int_\mY g(y)\;d\nu(y),
+            \label{equ:KantorovichDual}
+        \end{equation}
+
+        \vspace{-.4em}
+        where the set of admissible dual potential is
+
+        \vspace{-.4em}
+        \begin{equation}
+            \mathcal{R}(c) := \{(f,g) \in \cfun\times\cfuny : 
+            \forall (x,y), f(x)+g(y)\leq c(x,y)\}.
+        \end{equation}
+
+        \vspace{-.4em}
+        The pair $(f,g)$ is called Kantorovich potentials.
+    \end{Thm}
+
+    \pause
+    \begin{Thm}[Brenier]
+        In the case $\mX=\mY=\R^d$ and $c(x, y) =\|x-y\|_2^2$, 
+        if at least one of the two input measures (denoted $\mu$) 
+        has a density $\rho_\mu$ with respect to the Lebesgue measure, 
+        then the optimal $\pi$ in the Kantorovich formulation is unique 
+        and is supported on the graph $(x, T (x))$ of a Monge map
+        $T : \R^d \to \R^d$. This means that $\pi = (\text{Id}, T)_\#\mu$, 
+        i.e.
+
+        \vspace{-.4em}
+        \begin{equation}
+            \int_{\mX\times \mY} h(x,y)\;d\pi(x,y)=\int_\mX h(x,T(x))\;d\mu(x),
+            \quad \forall h\in\mathcal{C}(\mX\times \mY).
+        \end{equation}
+
+        \vspace{-.4em}
+        Furthermore, this map $T$ is uniquely defined as the gradient 
+        of a convex function $\varphi$, $T (x) = \nabla \varphi(x)$, 
+        where $\varphi$ is the unique (up to an additive constant) convex 
+        function such that $(\nabla\varphi)_\#\mu = \nu$. This convex 
+        function is related to the dual potential $f$ solving 
+        $(10)$ as
+
+        \vspace{-.4em}
+        \begin{equation}
+            \varphi(x)=\frac{\| x\|_2^2}{2} - f(x).
+        \end{equation}
+    \end{Thm}
+\end{frame}
+
+\begin{frame}{1-D case}
 \end{frame}

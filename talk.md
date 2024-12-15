@@ -8,9 +8,9 @@ And this is what we're going to discuss today. The theory, computation and appli
 
 ### Page 2
 
-Here is an overview of the optimal transport. The principal concern of OT is transporting a probability measure to another in an optimal way. Or, measuring the distance between two probability measures. 
+Here is an overview of the optimal transport. The **principal concern** of OT is transporting a probability measure to another in an optimal way. Or, measuring the distance between two probability measures. 
 
-The OT problem was first introduced by Monge when he was thinking how to move some mound of soil to other places in an optimal way. The first mathematical formulation of OT was introduced by Kantorovich in 1942. He classifies OT into 3 types, as shown in figure 1. He proves that the OT mapping can be found by maximizing a certain functional. Brenier's theorem is a landmark result in OT theory. It shows the existence, monotonicity, and uniqueness of the OT mapping with respect to the quadratic cost function between two given probability measures. Gu and his collaborators combined differential geometry, Monge-Ampère equations, and OT theory to develop a geometric variational algorithm for OT mappings, which are applied in explainable deep learning and other areas.
+The OT problem was first introduced by **Monge** when he was thinking how to move some mound of soil to other places in an optimal way. The first mathematical formulation of OT was introduced by **Kantorovich** in 1942. He classifies OT into 3 types, as shown in figure 1. He proves that the OT mapping can be found by maximizing a certain functional. **Brenier's theorem** is a landmark result in OT theory. It shows the existence, monotonicity, and uniqueness of the OT mapping with respect to the quadratic cost function between two given probability measures. **Gu and his collaborators** combined differential geometry, Monge-Ampère equations, and OT theory to develop a geometric variational algorithm for OT mappings, which are applied in explainable deep learning and other areas.
 
 Here are showcased some very cool applications, such as using OT to solve mazes, using OT for 2D shape interpolation, and using OT for histogram equalization of images.
 
@@ -30,13 +30,26 @@ Let's assume the $i$-th warehouse has $a_i$ coils and the $j$-th factory needs $
 
 ### Page 5
 
-To give a general formulation of OT, we first recall the three main scenarios for OT: discrete,  semidiscrete and continuous. The common point is that the source and the target could be regarded as probability measures, whatever discrete or continuous.
+To give a general formulation of OT, we first define the push-foward operator. Here we see the definition. Note that the push-forward operator always preserves the total mass. And here we show the push-forward operator of a discrete measure $\alpha$ by a map $T$. The sum of coefficients of red points should be equal with the sum of coefficients of blue points.
 
-So we assume $\mu$ is a probability measure on $\mathcal{X}$ and $\nu$ is one on $\mathcal{Y}$. And given a cost function $c(x,y)$. Then the general formulation of OT is the equation $(5)$, where $\pi$ is a measure on $\mathcal{X}\times \mathcal{Y}$ whose marginals should be $\mu$ and $\nu$, as shown in the equation $(6)$. This is called the Kantorovich formulation.
+Now we can give the **Monge formulation** of OT.  We assume $\mu$ is a probability measure on $\mathcal{X}$ and $\nu$ is one on $\mathcal{Y}$. And given a cost function $c(x,y)$. Then the general formulation of OT is the equation $(6)$, where $T$ is a map from $\mathcal{X}$ to $\mathcal{Y}$ such that the push-forward of $\mu$ by $T$ is $\nu$.
+
+We call it Monge problem since the discrete formulation was first introduced by Monge. And the map $T$ which solves the Monge problem is called the **Monge map**.
 
 ### Page 6
 
-Now we assume $\mathcal{X}=\mathcal{Y}$ and the cost function $c(x,y)$ is as this form. One natural idea is that, the optimal transport cost may define a distance between probability measures on $\mathcal{X}$. And that is the first theorem says. The distance is called $p$-Wasserstein distance.
+Here's another general formulation of OT. We first recall the three main scenarios for OT: discrete,  semidiscrete and continuous. The common point is that the source and the target could be regarded as probability measures, whatever discrete or continuous.
+
+Still, we assume $\mu$ is a probability measure on $\mathcal{X}$ and $\nu$ is one on $\mathcal{Y}$. And given a cost function $c(x,y)$. Then the general formulation of OT is the equation $(7)$, where $\pi$ is a measure on $\mathcal{X}\times \mathcal{Y}$ whose marginals should be $\mu$ and $\nu$, as shown in the equation $(8)$. This formulation is called the **Kantorovich problem**.
+
+### Page 7
+
+Now we assume $\mathcal{X}=\mathcal{Y}$ and the cost function $c(x,y)$ is as this form. One natural idea is that, the optimal transport cost may define a distance between probability measures on $\mathcal{X}$. And that is the first theorem says. The distance is called **$p$-Wasserstein distance**.
 
 Of course we care about properties of the distance. For example, the convergence. In fact, we can show that the convergence in $p$-Wasserstein distance is equivalent to the weak convergence. And that is the second theorem says.
 
+### Page 8
+
+The Kantorovich problem is a constrained convex minimization problem, and as such, it can be naturally paired with a so-called dual problem, which is a constrained concave maximization problem. Of course the Kantorovich problem and the dual problem share the same optimal value. And the pair $(f,g)$ is called the Kantorovich potentials.
+
+Brenier shows that, in the case $\mathcal{X}=\mathcal{Y}=\R^d$ and $c(x,y)$ is the Euclid distance, if at least one of the two input measures has a density with respect to the Lebesgue measure, then the optimal $\pi$ in the Kantorovich formulation is unique and is supported on the graph $(x,T(x))$ of a Monge map $T$. This means that $\pi$ is got by a push-forward. Furthermore, the Monge map is uniquely defined as the gradient of a convex function $\varphi$. And this convex function is related to the dual potential $f$ solving the Kantorovich dual problem. We can get $\varphi$ as shown in the equation $(13)$.
