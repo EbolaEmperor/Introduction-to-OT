@@ -62,7 +62,7 @@ Brenier shows that, in the case $\mathcal{X}=\mathcal{Y}=\R^d$ and $c(x,y)$ is t
 
 ### Page 10
 
-Now let's see some computation methods of OT. We will focus on the one dimensional space, namely the real number space. And we will show firstly how to solve OT with $L^p$ distance in some specific cases. Then we will introduce Sinkhorn's algorithm to show how to solve OT with an arbitary cost function in discrete case.
+Now let's see some computation methods of OT. We will first show how to solve OT in some specific 1-D cases. Then we will introduce Sinkhorn's algorithm to show how to solve OT with an arbitary cost function in discrete case.
 
 ### Page 11
 
@@ -86,7 +86,7 @@ So there's nothing hard for us to illustrate the displacement interpolation betw
 
 ### Page 14
 
-Before we introduce the generic case in 1-D space, we firstly write all measures into discrete forms. That is, for a continuous measure with density. Suppose it supports on $[0,1]$ without loss of generality. We choose an uniform grid on the interval $[0,1]$. And define a discrete measure as the equation $(18)$. Clearly, we can approximate the measure $\mu$ with this discrete measure. And the approximation gets better and better when the grid be finer and finer.
+Before we introduce the generic case in 1-D space, we firstly write all measures into discrete forms. That is, for a continuous measure with density. Suppose it supports on $[0,1]$ without loss of generality. We choose an uniform grid on the interval $[0,1]$. And define a discrete measure as the equation $(18)$. Clearly, we can approximate the measure $\mu$ with this discrete measure. And the approximation gets better and better when the grid be finer and finer. Furthermore, this discretization technique can be also used in multi-dimensional spaces.
 
 Now for an arnitary cost matrix $C$, we can write the Kantorovich problem as the equation $(20)$, where the transport matrix $P$ satisfies marginal conditions in the equation $(21)$.
 
@@ -104,6 +104,6 @@ Surprisingly, the regularized Kantorovich problem can be solved with a extremely
 
 The figures show how the iteration works. At the begining, the matrix $P$ doesn't even satisfy marginal conditions. But as the iteration runs, we can see the matrix $P$ is converging to the optimal one. 
 
-It's a fast algorithm. Altschuler and his collaborators prove that the computational complexity is near-linear to the reciprocal of $\varepsilon$. 
+It's a fast algorithm. Altschuler and his collaborators prove that the computational complexity is near-linear with respect to the reciprocal of $\varepsilon$. 
 
 However, Sinkhorn iteration suffers numerical overflow when $\varepsilon$ is too small. The reason is some elements of the matrix $K$ may be too small to be a floating point number. To avoid this, we can compute the iteration in the log-domain. We don't discuss details today.

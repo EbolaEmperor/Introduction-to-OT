@@ -1,14 +1,18 @@
 %% Log-Domain Sinkhorn
 % Compute in the logarithm domain to avoid numerical overflow.
-function [cost, couple] = sinkhorn(a, b, C, eps, N)
-    if nargin < 5
+function [cost, couple] = sinkhorn(a, b, C, eps, Tol, N)
+    if nargin < 6
         N = ceil((length(a) + length(b)) / eps);
+    end
+    if nargin < 5
+        Tol = 1e-12;
     end
     n = length(a);
     m = length(b);
     f = zeros(n, 1);
     g = zeros(m, 1);
     for T = 1 : N
+        disp(T)
         newf = zeros(n, 1);
         newg = zeros(m, 1);
         for i = 1 : n
@@ -17,7 +21,7 @@ function [cost, couple] = sinkhorn(a, b, C, eps, N)
         for j = 1 : m
             newg(j) = softmin(C(:,j) - newf, eps) + eps * log(b(j));
         end
-        if norm(newf - f) / norm(f) < 1e-12 && norm(newg - g) / norm(g) < 1e-12
+        if norm(newf - f) / norm(f) < Tol && norm(newg - g) / norm(g) < Tol
             fprintf("Sinkhorn converged in %d iterations.\n", T);
             break;
         end
