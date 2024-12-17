@@ -46,6 +46,8 @@ Here's another general formulation of OT. We first recall the three main scenari
 
 Still, we assume $\mu$ is a probability measure on $\mathcal{X}$ and $\nu$ is one on $\mathcal{Y}$. And given a cost function $c(x,y)$. Then the general formulation of OT is the equation $(7)$, where $\pi$ is a measure on $\mathcal{X}\times \mathcal{Y}$ whose marginals should be $\mu$ and $\nu$, as shown in the equation $(8)$. This formulation is called the **Kantorovich problem**.
 
+In fact, the Kantorovich problem is more general than the Monge since it can formulate the multi-marginal OT problem, with just a little modification.
+
 ### Page 8
 
 Now we assume $\mathcal{X}=\mathcal{Y}$ and the cost function $c(x,y)$ is as this form. One natural idea is that, the optimal transport cost may define a distance between probability measures on $\mathcal{X}$. And that is the first theorem says. The distance is called **$p$-Wasserstein distance**.
@@ -60,7 +62,7 @@ Brenier shows that, in the case $\mathcal{X}=\mathcal{Y}=\R^d$ and $c(x,y)$ is t
 
 ### Page 10
 
-Now let's see some computation methods of OT. We will show firstly how to solve OT with $L^p$ distance in one dimensional case. And then we will introduce Sinkhorn's algorithm to show how to solve OT with an arbitary cost function in discrete case.
+Now let's see some computation methods of OT. We will focus on the one dimensional space, namely the real number space. And we will show firstly how to solve OT with $L^p$ distance in some specific cases. Then we will introduce Sinkhorn's algorithm to show how to solve OT with an arbitary cost function in discrete case.
 
 ### Page 11
 
@@ -68,3 +70,40 @@ Here we suppose two discrete measures in the real number space, and each with or
 
 In fact, it's a greedy algorithm. As the figure shows, we fill the reds with blues. Consider the blues one by one from left to right. For each blue, choose the left-most red which is not full to fill in.
 
+### Page 12
+
+Here's another specific case. We suppose two continuous measures in the real number space, each with a density function. We write their cummulative distribution functions as $\mathcal{C}_\mu$ and $\mathcal{C}_\nu$. Then the one-Wasserstein distance could be simply computed by the equation $(15)$. And the Monge map is then defined by the equation $(16)$.
+
+Here we show their density functions, cumulative functions, and the Monge map. The dispacement interpolation is shown in the third figure. We can see it to understand how a probability distribution is transported to another.
+
+Of course this method could be generalized to an arbitrary $p$-Wasserstein distance. But we don't discuss today.
+
+### Page 13
+
+Here's a surprising result. For 1-D Gaussians, the two-Wasserstein distance can be computed by the equation $(17)$, which is thus the Euclidean distance on the 2-D plane plotting the mean and the standard deviation of a Gaussian $\mathcal{N}(m, \sigma)$!
+
+So there's nothing hard for us to illustrate the displacement interpolation between two 1-D Gaussians. The right figure shows the $(m,\sigma)$ plane.
+
+### Page 14
+
+Before we introduce the generic case in 1-D space, we firstly write all measures into discrete forms. That is, for a continuous measure with density. Suppose it supports on $[0,1]$ without loss of generality. We choose an uniform grid on the interval $[0,1]$. And define a discrete measure as the equation $(18)$. Clearly, we can approximate the measure $\mu$ with this discrete measure. And the approximation gets better and better when the grid be finer and finer.
+
+Now for an arnitary cost matrix $C$, we can write the Kantorovich problem as the equation $(20)$, where the transport matrix $P$ satisfies marginal conditions in the equation $(21)$.
+
+### Page 15
+
+Now let's introduce the idea of entropy regularization.
+
+Define the entropy function as the equation $(22)$. Then the regularized Kantorovich problem is defined by the equation $(23)$. It is in fact the original Kantorovich problem that added with a small entropy.
+
+The figures show the graphs of optimal $P$s when choose different $\varepsilon$. The red plot is the density of original measure $\mu$ while the blue is the target. The cost matrix is set to be $|x_i-x_j|^2$. As we can see, the optimal $P$s satisfy marginal conditions. And it converges to the solution to original Kantorovich problrm as $\varepsilon$ being small and small. It can be shown that the difference between the original problem and the regularized problem is only $O(\varepsilon)$.
+
+### Page 16
+
+Surprisingly, the regularized Kantorovich problem can be solved with a extremely simple iteration! It's called Sinkhorn iteration since the convergence is proved by Sinkhorn. And we can rebuild the transport matrix $P$ with the equation $(25)$.
+
+The figures show how the iteration works. At the begining, the matrix $P$ doesn't even satisfy marginal conditions. But as the iteration runs, we can see the matrix $P$ is converging to the optimal one. 
+
+It's a fast algorithm. Altschuler and his collaborators prove that the computational complexity is near-linear to the reciprocal of $\varepsilon$. 
+
+However, Sinkhorn iteration suffers numerical overflow when $\varepsilon$ is too small. The reason is some elements of the matrix $K$ may be too small to be a floating point number. To avoid this, we can compute the iteration in the log-domain. We don't discuss details today.

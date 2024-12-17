@@ -1,0 +1,1799 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: (MATLAB, The Mathworks, Inc. Version 24.1.0.2537033 \(R2024a\). Operating System: Mac OS X)
+%%Title: ./EntroRegu5.epsc
+%%CreationDate: 2024-12-17T14:19:40
+%%Pages: (atend)
+%%BoundingBox:   118    45   462   389
+%%LanguageLevel: 3
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset (Apache XML Graphics Std ProcSet) 1.2 0
+%%Version: 1.2 0
+%%Copyright: (Copyright 2001-2003,2010 The Apache Software Foundation. License terms: http://www.apache.org/licenses/LICENSE-2.0)
+/bd{bind def}bind def
+/ld{load def}bd
+/GR/grestore ld
+/GS/gsave ld
+/RM/rmoveto ld
+/C/curveto ld
+/t/show ld
+/L/lineto ld
+/ML/setmiterlimit ld
+/CT/concat ld
+/f/fill ld
+/N/newpath ld
+/S/stroke ld
+/CC/setcmykcolor ld
+/A/ashow ld
+/cp/closepath ld
+/RC/setrgbcolor ld
+/LJ/setlinejoin ld
+/GC/setgray ld
+/LW/setlinewidth ld
+/M/moveto ld
+/re {4 2 roll M
+1 index 0 rlineto
+0 exch rlineto
+neg 0 rlineto
+cp } bd
+/_ctm matrix def
+/_tm matrix def
+/BT { _ctm currentmatrix pop matrix _tm copy pop 0 0 moveto } bd
+/ET { _ctm setmatrix } bd
+/iTm { _ctm setmatrix _tm concat } bd
+/Tm { _tm astore pop iTm 0 0 moveto } bd
+/ux 0.0 def
+/uy 0.0 def
+/F {
+  /Tp exch def
+  /Tf exch def
+  Tf findfont Tp scalefont setfont
+  /cf Tf def  /cs Tp def
+} bd
+/ULS {currentpoint /uy exch def /ux exch def} bd
+/ULE {
+  /Tcx currentpoint pop def
+  gsave
+  newpath
+  cf findfont cs scalefont dup
+  /FontMatrix get 0 get /Ts exch def /FontInfo get dup
+  /UnderlinePosition get Ts mul /To exch def
+  /UnderlineThickness get Ts mul /Tt exch def
+  ux uy To add moveto  Tcx uy To add lineto
+  Tt setlinewidth stroke
+  grestore
+} bd
+/OLE {
+  /Tcx currentpoint pop def
+  gsave
+  newpath
+  cf findfont cs scalefont dup
+  /FontMatrix get 0 get /Ts exch def /FontInfo get dup
+  /UnderlinePosition get Ts mul /To exch def
+  /UnderlineThickness get Ts mul /Tt exch def
+  ux uy To add cs add moveto Tcx uy To add cs add lineto
+  Tt setlinewidth stroke
+  grestore
+} bd
+/SOE {
+  /Tcx currentpoint pop def
+  gsave
+  newpath
+  cf findfont cs scalefont dup
+  /FontMatrix get 0 get /Ts exch def /FontInfo get dup
+  /UnderlinePosition get Ts mul /To exch def
+  /UnderlineThickness get Ts mul /Tt exch def
+  ux uy To add cs 10 mul 26 idiv add moveto Tcx uy To add cs 10 mul 26 idiv add lineto
+  Tt setlinewidth stroke
+  grestore
+} bd
+/QT {
+/Y22 exch store
+/X22 exch store
+/Y21 exch store
+/X21 exch store
+currentpoint
+/Y21 load 2 mul add 3 div exch
+/X21 load 2 mul add 3 div exch
+/X21 load 2 mul /X22 load add 3 div
+/Y21 load 2 mul /Y22 load add 3 div
+/X22 load /Y22 load curveto
+} bd
+/SSPD {
+dup length /d exch dict def
+{
+/v exch def
+/k exch def
+currentpagedevice k known {
+/cpdv currentpagedevice k get def
+v cpdv ne {
+/upd false def
+/nullv v type /nulltype eq def
+/nullcpdv cpdv type /nulltype eq def
+nullv nullcpdv or
+{
+/upd true def
+} {
+/sametype v type cpdv type eq def
+sametype {
+v type /arraytype eq {
+/vlen v length def
+/cpdvlen cpdv length def
+vlen cpdvlen eq {
+0 1 vlen 1 sub {
+/i exch def
+/obj v i get def
+/cpdobj cpdv i get def
+obj cpdobj ne {
+/upd true def
+exit
+} if
+} for
+} {
+/upd true def
+} ifelse
+} {
+v type /dicttype eq {
+v {
+/dv exch def
+/dk exch def
+/cpddv cpdv dk get def
+dv cpddv ne {
+/upd true def
+exit
+} if
+} forall
+} {
+/upd true def
+} ifelse
+} ifelse
+} if
+} ifelse
+upd true eq {
+d k v put
+} if
+} if
+} if
+} forall
+d length 0 gt {
+d setpagedevice
+} if
+} bd
+/RE { % /NewFontName [NewEncodingArray] /FontName RE -
+  findfont dup length dict begin
+  {
+    1 index /FID ne
+    {def} {pop pop} ifelse
+  } forall
+  /Encoding exch def
+  /FontName 1 index def
+  currentdict definefont pop
+  end
+} bind def
+%%EndResource
+%%BeginResource: procset (Apache XML Graphics EPS ProcSet) 1.0 0
+%%Version: 1.0 0
+%%Copyright: (Copyright 2002-2003 The Apache Software Foundation. License terms: http://www.apache.org/licenses/LICENSE-2.0)
+/BeginEPSF { %def
+/b4_Inc_state save def         % Save state for cleanup
+/dict_count countdictstack def % Count objects on dict stack
+/op_count count 1 sub def      % Count objects on operand stack
+userdict begin                 % Push userdict on dict stack
+/showpage { } def              % Redefine showpage, { } = null proc
+0 setgray 0 setlinecap         % Prepare graphics state
+1 setlinewidth 0 setlinejoin
+10 setmiterlimit [ ] 0 setdash newpath
+/languagelevel where           % If level not equal to 1 then
+{pop languagelevel             % set strokeadjust and
+1 ne                           % overprint to their defaults.
+{false setstrokeadjust false setoverprint
+} if
+} if
+} bd
+/EndEPSF { %def
+count op_count sub {pop} repeat            % Clean up stacks
+countdictstack dict_count sub {end} repeat
+b4_Inc_state restore
+} bd
+%%EndResource
+%FOPBeginFontDict
+%%IncludeResource: font Courier-Oblique
+%%IncludeResource: font Courier-BoldOblique
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font ZapfDingbats
+%%IncludeResource: font Symbol
+%%IncludeResource: font Helvetica
+%%IncludeResource: font Helvetica-Oblique
+%%IncludeResource: font Helvetica-Bold
+%%IncludeResource: font Helvetica-BoldOblique
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Times-Italic
+%%IncludeResource: font Times-Bold
+%%IncludeResource: font Times-BoldItalic
+%%IncludeResource: font Courier
+%FOPEndFontDict
+%%BeginResource: encoding WinAnsiEncoding
+/WinAnsiEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma
+/hyphen /period /slash /zero /one
+/two /three /four /five /six
+/seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at
+/A /B /C /D /E
+/F /G /H /I /J
+/K /L /M /N /O
+/P /Q /R /S /T
+/U /V /W /X /Y
+/Z /bracketleft /backslash /bracketright /asciicircum
+/underscore /quoteleft /a /b /c
+/d /e /f /g /h
+/i /j /k /l /m
+/n /o /p /q /r
+/s /t /u /v /w
+/x /y /z /braceleft /bar
+/braceright /asciitilde /bullet /Euro /bullet
+/quotesinglbase /florin /quotedblbase /ellipsis /dagger
+/daggerdbl /circumflex /perthousand /Scaron /guilsinglleft
+/OE /bullet /Zcaron /bullet /bullet
+/quoteleft /quoteright /quotedblleft /quotedblright /bullet
+/endash /emdash /asciitilde /trademark /scaron
+/guilsinglright /oe /bullet /zcaron /Ydieresis
+/space /exclamdown /cent /sterling /currency
+/yen /brokenbar /section /dieresis /copyright
+/ordfeminine /guillemotleft /logicalnot /sfthyphen /registered
+/macron /degree /plusminus /twosuperior /threesuperior
+/acute /mu /paragraph /middot /cedilla
+/onesuperior /ordmasculine /guillemotright /onequarter /onehalf
+/threequarters /questiondown /Agrave /Aacute /Acircumflex
+/Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave
+/Iacute /Icircumflex /Idieresis /Eth /Ntilde
+/Ograve /Oacute /Ocircumflex /Otilde /Odieresis
+/multiply /Oslash /Ugrave /Uacute /Ucircumflex
+/Udieresis /Yacute /Thorn /germandbls /agrave
+/aacute /acircumflex /atilde /adieresis /aring
+/ae /ccedilla /egrave /eacute /ecircumflex
+/edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex
+/otilde /odieresis /divide /oslash /ugrave
+/uacute /ucircumflex /udieresis /yacute /thorn
+/ydieresis
+] def
+%%EndResource
+%FOPBeginFontReencode
+/Courier-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier-Oblique exch definefont pop
+/Courier-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier-BoldOblique exch definefont pop
+/Courier-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier-Bold exch definefont pop
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica exch definefont pop
+/Helvetica-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica-Oblique exch definefont pop
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica-Bold exch definefont pop
+/Helvetica-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica-BoldOblique exch definefont pop
+/Times-Roman findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-Roman exch definefont pop
+/Times-Italic findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-Italic exch definefont pop
+/Times-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-Bold exch definefont pop
+/Times-BoldItalic findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-BoldItalic exch definefont pop
+/Courier findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier exch definefont pop
+%FOPEndFontReencode
+%%EndProlog
+%%Page: 1 1
+%%PageBoundingBox: 0 0 560 420
+%%BeginPageSetup
+N
+  118    45 M
+  580    45 L
+  580   434 L
+  118   434 L
+cp
+clip
+[1 0 0 -1 0 420] CT
+%%EndPageSetup
+GS
+1 GC
+N
+0 0 560 420 re
+f
+GR
+GS
+1 GC
+N
+0 0 560 420 re
+f
+GR
+GS
+1 GC
+N
+118.75 374 M
+461.25 374 L
+461.25 31.5 L
+118.75 31.5 L
+cp
+f
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+118.75 374 M
+461.25 374 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+118.75 31.5 M
+461.25 31.5 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+118.75 374 M
+118.75 31.5 L
+S
+GR
+GS
+0.149 GC
+2 setlinecap
+1 LJ
+0.5 LW
+N
+461.25 374 M
+461.25 31.5 L
+S
+GR
+GS
+[0.5 0 0 0.5 118.75 31.5] CT
+[1 0 0 1 0 0] CT
+N
+0 682.717 M
+0 685 L
+2.283 685 L
+4.567 685 L
+6.85 685 L
+9.133 685 L
+11.417 685 L
+13.7 685 L
+15.983 685 L
+18.267 685 L
+20.55 685 L
+22.833 685 L
+25.117 685 L
+27.4 685 L
+29.683 685 L
+31.967 685 L
+34.25 685 L
+36.533 685 L
+38.817 685 L
+41.1 685 L
+43.383 685 L
+45.667 685 L
+47.95 685 L
+50.233 685 L
+52.517 685 L
+54.8 685 L
+57.083 685 L
+59.367 685 L
+61.65 685 L
+63.933 685 L
+66.217 685 L
+68.5 685 L
+70.783 685 L
+73.067 685 L
+75.35 685 L
+77.633 685 L
+79.917 685 L
+82.2 685 L
+84.483 685 L
+86.767 685 L
+89.05 685 L
+91.333 685 L
+93.617 685 L
+95.9 685 L
+98.183 685 L
+100.467 685 L
+102.75 685 L
+105.033 685 L
+107.317 685 L
+109.6 685 L
+111.883 685 L
+114.167 685 L
+116.45 685 L
+118.733 685 L
+121.017 685 L
+123.3 685 L
+125.583 685 L
+127.867 685 L
+130.15 685 L
+132.433 685 L
+134.717 685 L
+137 685 L
+139.283 685 L
+141.567 685 L
+143.85 685 L
+146.133 685 L
+148.417 685 L
+150.7 685 L
+152.983 685 L
+155.267 685 L
+157.55 685 L
+159.833 685 L
+162.117 685 L
+164.4 685 L
+166.683 685 L
+168.967 685 L
+171.25 685 L
+173.533 685 L
+175.817 685 L
+178.1 685 L
+180.383 685 L
+182.667 685 L
+184.95 685 L
+187.233 685 L
+189.517 685 L
+191.8 685 L
+194.083 685 L
+196.367 685 L
+198.65 685 L
+200.933 685 L
+203.217 685 L
+205.5 685 L
+207.783 685 L
+210.067 685 L
+212.35 685 L
+214.633 685 L
+216.917 685 L
+219.2 685 L
+221.483 685 L
+223.767 685 L
+226.05 685 L
+228.333 685 L
+230.617 685 L
+232.9 685 L
+235.183 685 L
+237.467 685 L
+239.75 685 L
+242.033 685 L
+244.317 685 L
+246.6 685 L
+248.883 685 L
+251.167 685 L
+253.45 685 L
+255.733 685 L
+258.017 685 L
+260.3 685 L
+262.583 685 L
+264.867 685 L
+267.15 685 L
+269.433 685 L
+271.717 685 L
+274 685 L
+276.283 685 L
+278.567 685 L
+280.85 685 L
+283.133 685 L
+285.417 685 L
+287.7 685 L
+289.983 685 L
+292.267 685 L
+294.55 685 L
+296.833 685 L
+299.117 685 L
+301.4 685 L
+303.683 685 L
+305.967 685 L
+308.25 685 L
+310.533 685 L
+312.817 685 L
+315.1 685 L
+317.383 685 L
+319.667 685 L
+321.95 685 L
+324.233 685 L
+326.517 685 L
+328.8 685 L
+331.083 685 L
+333.367 685 L
+335.65 685 L
+337.933 685 L
+340.217 685 L
+342.5 685 L
+344.783 685 L
+347.067 685 L
+349.35 685 L
+351.633 685 L
+353.917 685 L
+356.2 685 L
+358.483 685 L
+360.767 685 L
+363.05 685 L
+365.333 685 L
+367.617 685 L
+369.9 685 L
+372.183 685 L
+374.467 685 L
+376.75 685 L
+379.033 685 L
+381.317 685 L
+383.6 685 L
+385.883 685 L
+388.167 685 L
+390.45 685 L
+392.733 685 L
+395.017 685 L
+397.3 685 L
+399.583 685 L
+401.867 685 L
+404.15 685 L
+406.433 685 L
+408.717 685 L
+411 685 L
+413.283 685 L
+415.567 685 L
+417.85 685 L
+420.133 685 L
+422.417 685 L
+424.7 685 L
+426.983 685 L
+429.267 685 L
+431.55 685 L
+433.833 685 L
+436.117 685 L
+438.4 685 L
+440.683 685 L
+442.967 685 L
+445.25 685 L
+447.533 685 L
+449.817 685 L
+452.1 685 L
+454.383 685 L
+456.667 685 L
+458.95 685 L
+461.233 685 L
+463.517 685 L
+465.8 685 L
+468.083 685 L
+470.367 685 L
+472.65 685 L
+474.933 685 L
+477.217 685 L
+479.5 685 L
+481.783 685 L
+484.067 685 L
+486.35 685 L
+488.633 685 L
+490.917 685 L
+493.2 685 L
+495.483 685 L
+497.767 685 L
+500.05 685 L
+502.333 685 L
+504.617 685 L
+506.9 685 L
+509.183 685 L
+511.467 685 L
+513.75 685 L
+516.033 685 L
+518.317 685 L
+520.6 685 L
+522.883 685 L
+525.167 685 L
+527.45 685 L
+529.733 685 L
+532.017 685 L
+534.3 685 L
+536.583 685 L
+538.867 685 L
+541.15 685 L
+543.433 685 L
+545.717 685 L
+548 685 L
+550.283 685 L
+552.567 685 L
+554.85 685 L
+557.133 685 L
+559.417 685 L
+561.7 685 L
+563.983 685 L
+566.267 685 L
+568.55 685 L
+570.833 685 L
+573.117 685 L
+575.4 685 L
+577.683 685 L
+579.967 685 L
+582.25 685 L
+584.533 685 L
+586.817 685 L
+589.1 685 L
+591.383 685 L
+593.667 685 L
+595.95 685 L
+598.233 685 L
+600.517 685 L
+602.8 685 L
+605.083 685 L
+607.367 685 L
+609.65 685 L
+611.933 685 L
+614.217 685 L
+616.5 685 L
+618.783 685 L
+621.067 685 L
+623.35 685 L
+625.633 685 L
+627.917 685 L
+630.2 685 L
+632.483 685 L
+634.767 685 L
+637.05 685 L
+639.333 685 L
+641.617 685 L
+643.9 685 L
+646.183 685 L
+648.467 685 L
+650.75 685 L
+653.033 685 L
+655.317 685 L
+657.6 685 L
+659.883 685 L
+662.167 685 L
+664.45 685 L
+666.733 685 L
+669.017 685 L
+671.3 685 L
+673.583 685 L
+675.867 685 L
+678.15 685 L
+680.433 685 L
+682.717 685 L
+685 685 L
+685 682.717 L
+685 680.433 L
+685 678.15 L
+685 675.867 L
+685 673.583 L
+685 671.3 L
+685 669.017 L
+685 666.733 L
+685 664.45 L
+685 662.167 L
+685 659.883 L
+685 657.6 L
+685 655.317 L
+685 653.033 L
+685 650.75 L
+685 648.467 L
+685 646.183 L
+685 643.9 L
+685 641.617 L
+685 639.333 L
+685 637.05 L
+685 634.767 L
+685 632.483 L
+685 630.2 L
+685 627.917 L
+685 625.633 L
+685 623.35 L
+685 621.067 L
+685 618.783 L
+685 616.5 L
+685 614.217 L
+685 611.933 L
+685 609.65 L
+685 607.367 L
+685 605.083 L
+685 602.8 L
+685 600.517 L
+685 598.233 L
+685 595.95 L
+685 593.667 L
+685 591.383 L
+685 589.1 L
+685 586.817 L
+685 584.533 L
+685 582.25 L
+685 579.967 L
+685 577.683 L
+685 575.4 L
+685 573.117 L
+685 570.833 L
+685 568.55 L
+685 566.267 L
+685 563.983 L
+685 561.7 L
+685 559.417 L
+685 557.133 L
+685 554.85 L
+685 552.567 L
+685 550.283 L
+685 548 L
+685 545.717 L
+685 543.433 L
+685 541.15 L
+685 538.867 L
+685 536.583 L
+685 534.3 L
+685 532.017 L
+685 529.733 L
+685 527.45 L
+685 525.167 L
+685 522.883 L
+685 520.6 L
+685 518.317 L
+685 516.033 L
+685 513.75 L
+685 511.467 L
+685 509.183 L
+685 506.9 L
+685 504.617 L
+685 502.333 L
+685 500.05 L
+685 497.767 L
+685 495.483 L
+685 493.2 L
+685 490.917 L
+685 488.633 L
+685 486.35 L
+685 484.067 L
+685 481.783 L
+685 479.5 L
+685 477.217 L
+685 474.933 L
+685 472.65 L
+685 470.367 L
+685 468.083 L
+685 465.8 L
+685 463.517 L
+685 461.233 L
+685 458.95 L
+685 456.667 L
+685 454.383 L
+685 452.1 L
+685 449.817 L
+685 447.533 L
+685 445.25 L
+685 442.967 L
+685 440.683 L
+685 438.4 L
+685 436.117 L
+685 433.833 L
+685 431.55 L
+685 429.267 L
+685 426.983 L
+685 424.7 L
+685 422.417 L
+685 420.133 L
+685 417.85 L
+685 415.567 L
+685 413.283 L
+685 411 L
+685 408.717 L
+685 406.433 L
+685 404.15 L
+685 401.867 L
+685 399.583 L
+685 397.3 L
+685 395.017 L
+685 392.733 L
+685 390.45 L
+685 388.167 L
+685 385.883 L
+685 383.6 L
+685 381.317 L
+685 379.033 L
+685 376.75 L
+685 374.467 L
+685 372.183 L
+685 369.9 L
+685 367.617 L
+685 365.333 L
+685 363.05 L
+685 360.767 L
+685 358.483 L
+685 356.2 L
+685 353.917 L
+685 351.633 L
+685 349.35 L
+685 347.067 L
+685 344.783 L
+685 342.5 L
+685 340.217 L
+685 337.933 L
+685 335.65 L
+685 333.367 L
+685 331.083 L
+685 328.8 L
+685 326.517 L
+685 324.233 L
+685 321.95 L
+685 319.667 L
+685 317.383 L
+685 315.1 L
+685 312.817 L
+685 310.533 L
+685 308.25 L
+685 305.967 L
+685 303.683 L
+685 301.4 L
+685 299.117 L
+685 296.833 L
+685 294.55 L
+685 292.267 L
+685 289.983 L
+685 287.7 L
+685 285.417 L
+685 283.133 L
+685 280.85 L
+685 278.567 L
+685 276.283 L
+685 274 L
+685 271.717 L
+685 269.433 L
+685 267.15 L
+685 264.867 L
+685 262.583 L
+685 260.3 L
+685 258.017 L
+685 255.733 L
+685 253.45 L
+685 251.167 L
+685 248.883 L
+685 246.6 L
+685 244.317 L
+685 242.033 L
+685 239.75 L
+685 237.467 L
+685 235.183 L
+685 232.9 L
+685 230.617 L
+685 228.333 L
+685 226.05 L
+685 223.767 L
+685 221.483 L
+685 219.2 L
+685 216.917 L
+685 214.633 L
+685 212.35 L
+685 210.067 L
+685 207.783 L
+685 205.5 L
+685 203.217 L
+685 200.933 L
+685 198.65 L
+685 196.367 L
+685 194.083 L
+685 191.8 L
+685 189.517 L
+685 187.233 L
+685 184.95 L
+685 182.667 L
+685 180.383 L
+685 178.1 L
+685 175.817 L
+685 173.533 L
+685 171.25 L
+685 168.967 L
+685 166.683 L
+685 164.4 L
+685 162.117 L
+685 159.833 L
+685 157.55 L
+685 155.267 L
+685 152.983 L
+685 150.7 L
+685 148.417 L
+685 146.133 L
+685 143.85 L
+685 141.567 L
+685 139.283 L
+685 137 L
+685 134.717 L
+685 132.433 L
+685 130.15 L
+685 127.867 L
+685 125.583 L
+685 123.3 L
+685 121.017 L
+685 118.733 L
+685 116.45 L
+685 114.167 L
+685 111.883 L
+685 109.6 L
+685 107.317 L
+685 105.033 L
+685 102.75 L
+685 100.467 L
+685 98.183 L
+685 95.9 L
+685 93.617 L
+685 91.333 L
+685 89.05 L
+685 86.767 L
+685 84.483 L
+685 82.2 L
+685 79.917 L
+685 77.633 L
+685 75.35 L
+685 73.067 L
+685 70.783 L
+685 68.5 L
+685 66.217 L
+685 63.933 L
+685 61.65 L
+685 59.367 L
+685 57.083 L
+685 54.8 L
+685 52.517 L
+685 50.233 L
+685 47.95 L
+685 45.667 L
+685 43.383 L
+685 41.1 L
+685 38.817 L
+685 36.533 L
+685 34.25 L
+685 31.967 L
+685 29.683 L
+685 27.4 L
+685 25.117 L
+685 22.833 L
+685 20.55 L
+685 18.267 L
+685 15.983 L
+685 13.7 L
+685 11.417 L
+685 9.133 L
+685 6.85 L
+685 4.567 L
+685 2.283 L
+685 0 L
+682.717 0 L
+680.433 0 L
+678.15 0 L
+675.867 0 L
+673.583 0 L
+671.3 0 L
+669.017 0 L
+666.733 0 L
+664.45 0 L
+662.167 0 L
+659.883 0 L
+657.6 0 L
+655.317 0 L
+653.033 0 L
+650.75 0 L
+648.467 0 L
+646.183 0 L
+643.9 0 L
+641.617 0 L
+639.333 0 L
+637.05 0 L
+634.767 0 L
+632.483 0 L
+630.2 0 L
+627.917 0 L
+625.633 0 L
+623.35 0 L
+621.067 0 L
+618.783 0 L
+616.5 0 L
+614.217 0 L
+611.933 0 L
+609.65 0 L
+607.367 0 L
+605.083 0 L
+602.8 0 L
+600.517 0 L
+598.233 0 L
+595.95 0 L
+593.667 0 L
+591.383 0 L
+589.1 0 L
+586.817 0 L
+584.533 0 L
+582.25 0 L
+579.967 0 L
+577.683 0 L
+575.4 0 L
+573.117 0 L
+570.833 0 L
+568.55 0 L
+566.267 0 L
+563.983 0 L
+561.7 0 L
+559.417 0 L
+557.133 0 L
+554.85 0 L
+552.567 0 L
+550.283 0 L
+548 0 L
+545.717 0 L
+543.433 0 L
+541.15 0 L
+538.867 0 L
+536.583 0 L
+534.3 0 L
+532.017 0 L
+529.733 0 L
+527.45 0 L
+525.167 0 L
+522.883 0 L
+520.6 0 L
+518.317 0 L
+516.033 0 L
+513.75 0 L
+511.467 0 L
+509.183 0 L
+506.9 0 L
+504.617 0 L
+502.333 0 L
+500.05 0 L
+497.767 0 L
+495.483 0 L
+493.2 0 L
+490.917 0 L
+488.633 0 L
+486.35 0 L
+484.067 0 L
+481.783 0 L
+479.5 0 L
+477.217 0 L
+474.933 0 L
+472.65 0 L
+470.367 0 L
+468.083 0 L
+465.8 0 L
+463.517 0 L
+461.233 0 L
+458.95 0 L
+456.667 0 L
+454.383 0 L
+452.1 0 L
+449.817 0 L
+447.533 0 L
+445.25 0 L
+442.967 0 L
+440.683 0 L
+438.4 0 L
+436.117 0 L
+433.833 0 L
+431.55 0 L
+429.267 0 L
+426.983 0 L
+424.7 0 L
+422.417 0 L
+420.133 0 L
+417.85 0 L
+415.567 0 L
+413.283 0 L
+411 0 L
+408.717 0 L
+406.433 0 L
+404.15 0 L
+401.867 0 L
+399.583 0 L
+397.3 0 L
+395.017 0 L
+392.733 0 L
+390.45 0 L
+388.167 0 L
+385.883 0 L
+383.6 0 L
+381.317 0 L
+379.033 0 L
+376.75 0 L
+374.467 0 L
+372.183 0 L
+369.9 0 L
+367.617 0 L
+365.333 0 L
+363.05 0 L
+360.767 0 L
+358.483 0 L
+356.2 0 L
+353.917 0 L
+351.633 0 L
+349.35 0 L
+347.067 0 L
+344.783 0 L
+342.5 0 L
+340.217 0 L
+337.933 0 L
+335.65 0 L
+333.367 0 L
+331.083 0 L
+328.8 0 L
+326.517 0 L
+324.233 0 L
+321.95 0 L
+319.667 0 L
+317.383 0 L
+315.1 0 L
+312.817 0 L
+310.533 0 L
+308.25 0 L
+305.967 0 L
+303.683 0 L
+301.4 0 L
+299.117 0 L
+296.833 0 L
+294.55 0 L
+292.267 0 L
+289.983 0 L
+287.7 0 L
+285.417 0 L
+283.133 0 L
+280.85 0 L
+278.567 0 L
+276.283 0 L
+274 0 L
+271.717 0 L
+269.433 0 L
+267.15 0 L
+264.867 0 L
+262.583 0 L
+260.3 0 L
+258.017 0 L
+255.733 0 L
+253.45 0 L
+251.167 0 L
+248.883 0 L
+246.6 0 L
+244.317 0 L
+242.033 0 L
+239.75 0 L
+237.467 0 L
+235.183 0 L
+232.9 0 L
+230.617 0 L
+228.333 0 L
+226.05 0 L
+223.767 0 L
+221.483 0 L
+219.2 0 L
+216.917 0 L
+214.633 0 L
+212.35 0 L
+210.067 0 L
+207.783 0 L
+205.5 0 L
+203.217 0 L
+200.933 0 L
+198.65 0 L
+196.367 0 L
+194.083 0 L
+191.8 0 L
+189.517 0 L
+187.233 0 L
+184.95 0 L
+182.667 0 L
+180.383 0 L
+178.1 0 L
+175.817 0 L
+173.533 0 L
+171.25 0 L
+168.967 0 L
+166.683 0 L
+164.4 0 L
+162.117 0 L
+159.833 0 L
+157.55 0 L
+155.267 0 L
+152.983 0 L
+150.7 0 L
+148.417 0 L
+146.133 0 L
+143.85 0 L
+141.567 0 L
+139.283 0 L
+137 0 L
+134.717 0 L
+132.433 0 L
+130.15 0 L
+127.867 0 L
+125.583 0 L
+123.3 0 L
+121.017 0 L
+118.733 0 L
+116.45 0 L
+114.167 0 L
+111.883 0 L
+109.6 0 L
+107.317 0 L
+105.033 0 L
+102.75 0 L
+100.467 0 L
+98.183 0 L
+95.9 0 L
+93.617 0 L
+91.333 0 L
+89.05 0 L
+86.767 0 L
+84.483 0 L
+82.2 0 L
+79.917 0 L
+77.633 0 L
+75.35 0 L
+73.067 0 L
+70.783 0 L
+68.5 0 L
+66.217 0 L
+63.933 0 L
+61.65 0 L
+59.367 0 L
+57.083 0 L
+54.8 0 L
+52.517 0 L
+50.233 0 L
+47.95 0 L
+45.667 0 L
+43.383 0 L
+41.1 0 L
+38.817 0 L
+36.533 0 L
+34.25 0 L
+31.967 0 L
+29.683 0 L
+27.4 0 L
+25.117 0 L
+22.833 0 L
+20.55 0 L
+18.267 0 L
+15.983 0 L
+13.7 0 L
+11.417 0 L
+9.133 0 L
+6.85 0 L
+4.567 0 L
+2.283 0 L
+0 0 L
+0 2.283 L
+0 4.567 L
+0 6.85 L
+0 9.133 L
+0 11.417 L
+0 13.7 L
+0 15.983 L
+0 18.267 L
+0 20.55 L
+0 22.833 L
+0 25.117 L
+0 27.4 L
+0 29.683 L
+0 31.967 L
+0 34.25 L
+0 36.533 L
+0 38.817 L
+0 41.1 L
+0 43.383 L
+0 45.667 L
+0 47.95 L
+0 50.233 L
+0 52.517 L
+0 54.8 L
+0 57.083 L
+0 59.367 L
+0 61.65 L
+0 63.933 L
+0 66.217 L
+0 68.5 L
+0 70.783 L
+0 73.067 L
+0 75.35 L
+0 77.633 L
+0 79.917 L
+0 82.2 L
+0 84.483 L
+0 86.767 L
+0 89.05 L
+0 91.333 L
+0 93.617 L
+0 95.9 L
+0 98.183 L
+0 100.467 L
+0 102.75 L
+0 105.033 L
+0 107.317 L
+0 109.6 L
+0 111.883 L
+0 114.167 L
+0 116.45 L
+0 118.733 L
+0 121.017 L
+0 123.3 L
+0 125.583 L
+0 127.867 L
+0 130.15 L
+0 132.433 L
+0 134.717 L
+0 137 L
+0 139.283 L
+0 141.567 L
+0 143.85 L
+0 146.133 L
+0 148.417 L
+0 150.7 L
+0 152.983 L
+0 155.267 L
+0 157.55 L
+0 159.833 L
+0 162.117 L
+0 164.4 L
+0 166.683 L
+0 168.967 L
+0 171.25 L
+0 173.533 L
+0 175.817 L
+0 178.1 L
+0 180.383 L
+0 182.667 L
+0 184.95 L
+0 187.233 L
+0 189.517 L
+0 191.8 L
+0 194.083 L
+0 196.367 L
+0 198.65 L
+0 200.933 L
+0 203.217 L
+0 205.5 L
+0 207.783 L
+0 210.067 L
+0 212.35 L
+0 214.633 L
+0 216.917 L
+0 219.2 L
+0 221.483 L
+0 223.767 L
+0 226.05 L
+0 228.333 L
+0 230.617 L
+0 232.9 L
+0 235.183 L
+0 237.467 L
+0 239.75 L
+0 242.033 L
+0 244.317 L
+0 246.6 L
+0 248.883 L
+0 251.167 L
+0 253.45 L
+0 255.733 L
+0 258.017 L
+0 260.3 L
+0 262.583 L
+0 264.867 L
+0 267.15 L
+0 269.433 L
+0 271.717 L
+0 274 L
+0 276.283 L
+0 278.567 L
+0 280.85 L
+0 283.133 L
+0 285.417 L
+0 287.7 L
+0 289.983 L
+0 292.267 L
+0 294.55 L
+0 296.833 L
+0 299.117 L
+0 301.4 L
+0 303.683 L
+0 305.967 L
+0 308.25 L
+0 310.533 L
+0 312.817 L
+0 315.1 L
+0 317.383 L
+0 319.667 L
+0 321.95 L
+0 324.233 L
+0 326.517 L
+0 328.8 L
+0 331.083 L
+0 333.367 L
+0 335.65 L
+0 337.933 L
+0 340.217 L
+0 342.5 L
+0 344.783 L
+0 347.067 L
+0 349.35 L
+0 351.633 L
+0 353.917 L
+0 356.2 L
+0 358.483 L
+0 360.767 L
+0 363.05 L
+0 365.333 L
+0 367.617 L
+0 369.9 L
+0 372.183 L
+0 374.467 L
+0 376.75 L
+0 379.033 L
+0 381.317 L
+0 383.6 L
+0 385.883 L
+0 388.167 L
+0 390.45 L
+0 392.733 L
+0 395.017 L
+0 397.3 L
+0 399.583 L
+0 401.867 L
+0 404.15 L
+0 406.433 L
+0 408.717 L
+0 411 L
+0 413.283 L
+0 415.567 L
+0 417.85 L
+0 420.133 L
+0 422.417 L
+0 424.7 L
+0 426.983 L
+0 429.267 L
+0 431.55 L
+0 433.833 L
+0 436.117 L
+0 438.4 L
+0 440.683 L
+0 442.967 L
+0 445.25 L
+0 447.533 L
+0 449.817 L
+0 452.1 L
+0 454.383 L
+0 456.667 L
+0 458.95 L
+0 461.233 L
+0 463.517 L
+0 465.8 L
+0 468.083 L
+0 470.367 L
+0 472.65 L
+0 474.933 L
+0 477.217 L
+0 479.5 L
+0 481.783 L
+0 484.067 L
+0 486.35 L
+0 488.633 L
+0 490.917 L
+0 493.2 L
+0 495.483 L
+0 497.767 L
+0 500.05 L
+0 502.333 L
+0 504.617 L
+0 506.9 L
+0 509.183 L
+0 511.467 L
+0 513.75 L
+0 516.033 L
+0 518.317 L
+0 520.6 L
+0 522.883 L
+0 525.167 L
+0 527.45 L
+0 529.733 L
+0 532.017 L
+0 534.3 L
+0 536.583 L
+0 538.867 L
+0 541.15 L
+0 543.433 L
+0 545.717 L
+0 548 L
+0 550.283 L
+0 552.567 L
+0 554.85 L
+0 557.133 L
+0 559.417 L
+0 561.7 L
+0 563.983 L
+0 566.267 L
+0 568.55 L
+0 570.833 L
+0 573.117 L
+0 575.4 L
+0 577.683 L
+0 579.967 L
+0 582.25 L
+0 584.533 L
+0 586.817 L
+0 589.1 L
+0 591.383 L
+0 593.667 L
+0 595.95 L
+0 598.233 L
+0 600.517 L
+0 602.8 L
+0 605.083 L
+0 607.367 L
+0 609.65 L
+0 611.933 L
+0 614.217 L
+0 616.5 L
+0 618.783 L
+0 621.067 L
+0 623.35 L
+0 625.633 L
+0 627.917 L
+0 630.2 L
+0 632.483 L
+0 634.767 L
+0 637.05 L
+0 639.333 L
+0 641.617 L
+0 643.9 L
+0 646.183 L
+0 648.467 L
+0 650.75 L
+0 653.033 L
+0 655.317 L
+0 657.6 L
+0 659.883 L
+0 662.167 L
+0 664.45 L
+0 666.733 L
+0 669.017 L
+0 671.3 L
+0 673.583 L
+0 675.867 L
+0 678.15 L
+0 680.433 L
+cp
+clip
+GS
+0 0 translate
+685 685 scale
+%AXGBeginBitmap: java.awt.image.BufferedImage
+{{
+/RawData currentfile /ASCII85Decode filter def
+/Data RawData /FlateDecode filter def
+/DeviceRGB setcolorspace
+<<
+  /ImageType 1
+  /Decode [0 1 0 1 0 1]
+  /DataSource Data
+  /Height 685
+  /ImageMatrix [685 0 0 685 0 0]
+  /Width 685
+  /BitsPerComponent 8
+>> image
+} stopped {handleerror} if
+  RawData flushfile
+} exec
+Gb"0WH]6cnGpdP`bDI%:KQ\fO'K02/Ci#1$G4(slb]lm>!.bac/6]VA.Y=t#$3C66MRikT+r4>n9r/P-
+8lLP7&o)A>%S<0M%M"NT+Cc=D1_%:SKM/K/T%Kfdjud::O2p8ge3:Y;Gs9[>O-)4SH-cE[I.^g;kNl8T
+E]*nO\CSm91^q];5@qZc1pV(1BRFXs^i:Y)!'igf!7oB//9CtZYJsWL!$!@q!!&60"opnGSa,)A!!h?f
+k\1!+j%BOUN\)sc!"/"nr\FXAqs3["b3s.o_#V9U+pJ$46*m'_bSgJYcO1Xu0E?'nL]IKPbn4gq*Y\Sm
+?SDJ!XG?lW:mMpu!!OD5;1JWH!/!lP!.]Z]p/->?!!!*k$ikg0I];(P!WW3/&hs@daq=dVTUNbU#Oj,A
+!!\l/!!!0?*"2gYM#dTQOMSa5:mMpu!7dGR#QSFm!<>r^(]XO>)&s%bAVgEf:lrN0!)Ssu!!!1j(^L+Q
+M#dTQQ5BT%eJK87!+guf!)Scn_#R;t(]XO>)&s%bAVgEf:lU<_!)Ssu!!$Se!<>rX_8-+JQ5BT%"W89g
+!+guf!)Sc6JH/N4(]XPIM#dTQNPWF2:mMpu!!O5[$ijjq!<>rX_8-+JQ5BT%eX.0Z!+guf!)Ssu!!!0?
+*"2gYM#dTQOMSa5:mMpu!!Sc-#QSFm!<>r^(]XQd(`WqaAVgEf:lrN0!)Ssu!!!0?*"2gYM#dTQOGSMg
+:mMpu!+guf!)S[;!!#i](]XO>Bat+CAVgEf:lsf>!)Ssu!!(OhmP^_>JH.CN_uKcc9+1fNJe%N'@%%&q
+!!>e$!.]Y2pF)]Dq?m9'0Q=r1!%@&M[fI"#"V:Y6@$$0F!)Ssu!!(OhTfIWn!<=g`_uKcck_RIa4:2(=
+5pZ^85X@nV%a^U[i&2\X$lgu%!3/&JgOQs<T^`0f!69s6!!$Se!<>sCd0pL#!!$CLM#dTQee&u-9Eft?
+pGBT`!8uKB!s#!eguL]T.=bHM!&1(a!!"E?$ikg0%LrI`$TFr8`s2tP!&-s^!!&s0Aui_=!2)a\!":b?
+!!(1,`dk/`h1L6W(sm+3+92DW+;+bVTV)DT"O78Q]lsOk%0V34,6e-5=^h@2Ph#XfTXRQZpJue[!<=gP
+_uKcckYP%WAfM%4^.n[dQkKQ%TWA56"tnWZER8\jj6HgJN]Afo!6PoV!2-CqD?W_SJBk7s!<<*(RMZ#)
+ea/nPe9`/h>H`RsQO3^4>@IR4Pgu<:OEH'?d$:<Z78U/f!#T*Q!!&7kJ!aX<Ol2s.h1'Md!!!*p$ikg`
+_uKcc-qes^;*`tFaKN2l"r^ho!,t&V!<>qskCLG@5sXlXJSm8p`YSp]*"QKY!0ib8!42NGp"g)k!ru_*
+M#dTQQ5BT%"ng.R>.]$#ar:C'#QVYJ'*A6-XA6fdHm$dq!SK3C=TAF11bet1b0$:TcF(IP(gr."!)t'F
+!'j\XVh,cdVOn4,*!cNZL]IKPQ5BT%A`]\;d3W!`GI3H9!<>rI(]XO>ol^c-`.3"VcnPM##+cY3!+d2+
+0d*Y-L;qgL!$#'L!!&60"opnk#BUAfb@$uQ!!!Ei0`V3r)IBWkj;W[,k(-tA!":tE!!(/&TRU?F])WiR
+!+=`A!<>qj\(:<I&'P--`n(Cp**6SL!0ec6!'j]C(m)E43\`nk5QE2t$ikg`]$17:*<UWa#<':S!8t@"
+!s#!qmMNdfV-?<bJ"Urc!)S1_!!$Se!<>qs[Kr6=.b'IZff_S/!.YEp!!"DtV[-!+(!7B?rjqW"!<@Nj
+"opnSS`YLj4+SPbJ8#&b:k9G`!+kh`&t#+7O>4O-!<=N5$ikg`_uKccX*::7Q_?_G:k9G`!+g:^5l3*?
+C77DJ(tLn_!"'8>!2-F+%61e4>;AnQ!9t*t!2(kt!!(0a^;9\VJ>#:0:kfee!+k7@5W8la.Kf`oL]IKP
+<mDN<*s51M!.ZiC!!"FGGICngMkFbc!)S4`!!$Se!<>qs`dgeak`-M257df%&-Dp*XPEj%#6K0-@)O`!
+'HmY\5ZsWpY^Cf=mK'$O<<3)J+9hg2=kPJ_@mEd)#`Z"p!9aM>!!(.S!s#!qS136M!=Li```E<DoRRhZ
+!+f`tcPVb++>ge^!2'k@!!"Dt)[1=m5l8-#BREe[5Tbd_!)Ssu!!$Tl/>4%8P`:Aaj/W4]qEPGhJ?hY2
+CmhSNCWQ=g7LTAa&Rk_?<7@uEGoVoS5R[XC$H)oE-u4;@BKm6UMh6ql$398l0`V3r&d&-,XDWrHYn]>f
+p(D1h<<,9+L]IKP<d/pV`dj1?RmQ/9!W`'^$ikg`L)4YsSJ\SM@q^6i!'hW^!<>r^(]XPIA_dk7"#:KG
+^+',U&&\GJ-nCnoKMDqh^D^d5<<,9+L]IKP<jiGG)$@1>@,n9h!;\qh!._@qUgV7MK/meQnPoSiI38^o
+5ZqOr!0f@PFDDe![Om:9!)SFf!!$SAoa_oE)IF!Tco5D6!#1[ps*6CSj@-o)<s8TrJJ\@eAVgEf:f\qJ
+[!N(6Can07WW7Q5&-Dp*XILIk^@J.cj+\L['`cSc@K6Cm2*?A:fH122D@DN.$398l0`V3rlGS3Q]@-2#
+%AE;l!<@Nj"opnk@K6CmQ$%S+$tuPj``E<DoRRhZ!+f`:JF6']Ca7=%WW7Q5&-Dp*X;iE,"opnS@K6Cm
+,mF?7=_egl%c'Fg3Hr"'<<3)J+9hg2=eeWuKX'XnP8F9"Fbg%u:tF:)D7pip%fjs8@K6CmQ"L,C1_:R4
+%fjs8@K6Cm,mF?762;oOgBD-^JC+(k!.[6E!s#!qMubq2+=@PM``E<DoRRhZ!+g:^^oC[KAC7:(po4=E
+4qIerTI_et!6SJ$s0C".!=Li```E<DoRRhZ!+cVc?Q[9hmgd5C2Pe>o"T\1G(]XPI*=r>,?\cX&"T\1G
+(]XPIjXEI7J@mKO)IF3Zcj+"[!0ec6!'j]?-m8BkL]IKPMAQ<nA`[I]*&O2W"[_7M!W`'^$ikg`eh5f!
+_uKcc8.5KKZGZ_C-u3qHQ8#apHY@d]!'ic*!<>sIkgHSACtZ8DpgO5RIM)__TWC6ca=u!9@K:q-&d&-,
+XK`L%6XCICHnbUd5D]C@:mMpu!+faA_!EB"pgO5RIM)__TV*8H0YV:'(g43p1qk48TKg?p!%=l]"'4k#
+,7?Gb`g6f.oS47`!+guf!)Q^7$lE<T+Z-nY!2)Qp!!"E_c2>c%\l3MW_t2K8`g6f.oS47`!+fa+(BXZ1
++>Eirb3FreGsKaOOoU%3&-Dp*/27,)b0"#kff(%##W07@!2)Qp!!"Dtk6QkE!)Sao!!$Si/D:fX=7$?(
+!!&6-"opnk@K6Cm[<D*&0Y[+Td.h&MJ:8+5!2-F@-!S7=MOgI2`;fo:,R+66=eeX!L9]jp6fX(*!;]7q
+!._ApQ>Pr&HnbUd5D]C@:mMpu!+k72JUB,tpgO5RIM)__TWIK%R(WVA?OQq]:LX;(Pa/QYf+)(()IEmQ
+cqe*N!*$::hPFq6p$ON>BN&Sl<<,9+L]IKPQ5BT%AT_Lu\l3MW,7?Gb``E<DoRRhZ!+i:#Ip'o20YCd\
+BREe[5Tbd_!)V8G(i\1\@<heJd.jU@J3FMH!2(kt!!(0a\fW[3A0bi9<<,9+L]IKP<^$ru@K6C-,6e-5
+=o2\o]5KrX'Pr.s!'hW^!<>qsNYDn2!!#tC"opnk@K6Cm[<CcV1qn9[&-Dp*%P[q`b$)E%F35?Hpj)pj
+^(CGITWHP;>LWAI?(pf]!!%El"opnk@K6Cm27@=*a,6F]nauk^I3Spr5Zq7gV_$^H)IF!Tco5D6!#1Y,
+"7p,4aJ4=+<s8TrJJ\@eAT_HI]6Rf*B7l2I$398l0`V3r&d&-,X>TT&$gUR"-&jP1&fP*l!71s[!!&6@
+4F_c]GK-b!mEh,lnPoSiI38^o5Ztu42M?pnDGML82MK.P"T\1G(]XPIM#dTQ<n@5+20YjYKc<D>Wr`:t
+5R[XCZLV_F`:0@_B*=3t$398l0`V3rarpg",Bp#$,LH4c!.[6E!s#!eS1Q_/I!ZD,!2(#\!!(.S!s#!q
+*&0RiH?\SmJGdI-f*23p=(2.0Pgqj)\D&qb:C8"I)ZXh^M#dTQ<fR^S"G#a)!b)-0<$2AF5ZqOr!0ia9
+Kj*ek)CEb@4c'1>:k9G`!7bVRTB[N.Cg1SDF'm#_!ho/G!<C0$(]XPIAY6c;rdh+nL":#]%-p[%3AnN5
+!9!Va!s#!qi<:1K`0n)gf'=Cbj"#%?N@teB3.AdG!%:JK!._A\?,0F[J?c_aSG,Pk>J<6X^,uDRp^mT.
+TV1.b!E1!@?LtssFpo3nZ6_BB8-%Rm&-Dp*XPs!@_t`NQWV)!9VmNW5G#&G`?R,Vj4GX"<:mMpu!+h-@
+g(YlgpN4(@acJFa7M]l8N@tnE3$-!<!%98Q#`LCl)Hs>Y5E5^B^<gWN'CrdY1qlohi7JYE!2-DEnMs3d
+im!O^d<Fpb'-h^Ume#JXQO3^4>@IR4'U6W=]gDqBhS-2F\he45q/)hq"TnbFMAQ<nAVgEf:fa1_O0.%P
+>3A'hc?RZG>5,X)L%1EeKuV^N!$$&h!!$!Ih;n$H%U='Fa@61\rb-4b^%&@8^+]Nq(bl!jb3J[$(gFF#
+ZsNW;=T/5I@H@_TZBnt]KZ4f:!$!Lu!!&60"opnSSLX`iK7bPs\il"E^GcRLm'4oc.?NSE9b[YZJKY3t
+5ZsYaJE>NalZKrJbPp,M0_EJB6G=8'Z?g^K;$[.+L)9mj"WcAH+QPB<7A##O%"8'$coUWX1qIdE0M2<F
+#(RNj!+k8'^RPn_HGcLlnOFZ3YP?;5Khh6TF[&TGLTp;[!s&@M@K6Cm,mF?72;O"<3@$"GI(),O.2Vq.
+be*B-+Wguk48%asN;rsKkemH$.&clS5Zi6MX]+*M<*8YCHdbP&s#:F8io,t^">VP3DZg'u`$GTf5Ztu4
+2MA^V3-?hBgkS6,%f!57^*C>XDsn*I>qd/%P<f+HBRKaY^opE?!._An!!"FGo/*,r%Cjs"-`qjt^@7<#
+gCmn4falQK5JKFihY:3o@7/k;"c\!=!8pp$"opnS=i&]BhAdk3mL5lZgm:e8r*A8Ahq/[TLB=BgG;;i#
+mg7\P!l,+:$ikfmnr8-$4*5&$3:jS?/HY)7`R!#>2gd8h%*6Q-+_M/V*X=P$=TEtZMAQ<n"jLiuGhO`X
+im!O>7A"l[ADIbl^LD!".tVQo245f:\ii"_!.Y`F(]XPIM#dTQ:i??t:']&S!')Omf>%=`nD('&FfbU/
+=T":/6L10=;J1lK>6+_C64j;"TUKbb^YVn>XSu-!i(kF$=n,k/Gsci1\$i-'/=bl,j/[@"iVDe,iu\U.
+3#Z6+!#3r;+`OGQ@(SEaQM!?DkT0l>m+SXs?b>UXiT5Rfs3fQSpP&OEmZkXO=_R`.!<@m&"opnk@K6Cm
+P%?[Mn8iPfNWBL?.l\m[5P+H:C#5.K_t1)2AiT&7+,@3&E&+gjmg9pU]$6!Ls*t*bTni^L:sFs^!95SJ
+$E[Cc)b0hiA3/hHT7j+Z\iq[TmZNe8TQc32CZ8tU;hPne!&2HM!<>qgBE*ItL6*^.l3O'=o07R'/G\d6
++\R4()h;)ioBYno0C9'Y>qd.BX+/J?!!).40`V4=kcO_\V8(jC^XEqe2%QM<s*s.nmKr\+nAX",4e6uf
+=2WKGD@`rGbFbWYGO,]_)mFNmJ:dh%QrCp'!%:JK!.YEfn+8^9rtfP]H"=\XN*B63rN,$HT6r'cp-8IZ
+p^c8r-=lfLO&p3o0=p6<cl!i$VT2Un$!]Q6APi=+?nMum!2,RX_R\X_*<_HE!%(2'%';HN)S05R(4GJa
+nD^YL.-+EYpeOst's]j8$ST1F/Gd,r83%n;T*(%SfU4L&kR\""bn:*YTRn&JrGk]J;t8W@s')[V.-7%M
+mc:#2=*KGWr9CC5LB;#ZJ+!.TUmM&ISRL_lO+m,qpP/#\(rfYE$GH?:NW9'Ps24m;W1\@q?T=_<\$u43
+G5KU4,ii1EToVDV:B&+9l*pZ^?c-s!Yq%q`_tV#dI-m5a'gFYTpQ#Jo*us@Fm;2[/V[N]N*ru.2$ikg`
+_uKccV>%7pf^eE<@a,oB.t6Z]s/-r03Vk,(r6qk%)P6Z)D(/9YEr]$[#08Ma;j2aco7L4VGDG_=]2QEs
+a=@M`rrYOdM#dTQ8(RXon=SG+Dr8ZT[I+@]^V;E1IH'4MXo+c1`KlT[rk#Jf?bQT_T`F'$pJ$C!2a8?e
+l[Bb`'gG1gF=R:^c$uQ3!;]@t!.[,AA[bV4gNC("lMK'"]-ft+nB6%S9<\A))VtD7E;C$9$dZTaRjm+j
+jdps7jPTUJ^`4GXdf_]Ps&=@GBTs>6!+guf!)Q:Rh5nTkn3:HUhQ6T%J,ZU8o6nopnK["E*Tr4X^>ln@
+d</e+q=).G@:7p[m0u)JVmkc+aDM)04odE4$ikf=ZM8Ti!9VRS2X&?$*TmC@cU6:^DQWru%3siKn,?'!
+hu9OI3s^)IBC60'Hm%bS<9\<KMX:#f>PFD3!,.6,!!!1FpA_&&nTSjNT)3KJRD7(Zr2+SmNXph^?ah:s
+^Lhrkpl4HkH!;m1g%g,IlbE-6_APH8Y5A=9g`Zk%5XCt>s)s%/mKC=Q`:ri;\ML>^cKE*"l^+MrY*eeY
+X653)TtiH;h\h/4p/oD]s7u(9FF*r@q$2G\7goBJZGZ_CW2&r"TKSqqN31_MZ@h%t5C#$G-3"MCGY>Pb
+e&no`b-TRJCDVYhgF`gn%QLP<f4;ro5WNMfqtnol!15jd!!"FGpGp%#;f>DkdPnc=$uN[;jo,4-2lmFO
+f:F$9hKF)=03<WR/GdkKU%P;'e%4"G$,*MB)ZR#A5VFhl!"/!"#Ai;KRoj`%a@h'B7@2dNntt:X=.Gg&
+^Ni\D]_]kA_&[G'chYS`[.4=r6L10=667NXqu6XMB8HWh:mMpu!7g.GrU,c?]ZIqbrVOGf^:>J:iJ,aa
+pRde,8+)b2*ntd;Ghn?$%OYQ[j3Wbp'>o/`p)3)nrl./O!&0$B!!!16Fj;B4+m8`5QbO>Sh@OjJSsLM/
+I=?G9Y#E3n="I,"(1?!Q57dRS+Q!6RHt_Fu!!(5G@K6DXd;@L-\+RaBh@t!.E*2UtqnfZ-r,p)`J</LW
+ZBPCJ#?T4Z-XF&B%=R6pd!FM$6N/H?!<HTR&d&-,TG]Ne``MU=g"c%\Mgggm2u]G2r;[pdjL<#OHfh0*
+Y8[hp\7/*5qSuC.euS3JA';:a_Z9dGc4U3ZTI_et!"/"M$<jqollQu7egEi1s#kkP]@4J7bJN:84?kt)
+Dm'RV]O<'KHc,Tp)=Nt%XjOaY[KZ.?!!).40`V1\3acLf)7P@joCo,P&b)J7D[B5-*_K3jq7J0VZ7(+u
+`cK%9IeD:Akmc8d1m!oQ%1<Aj\P*D3J82[ioJ-D?S9\<UHi(PHK$/V15.gc`nCXiN6DsZEq7OC"/I?p2
+j..?+"KZt);]Y6>dHM,(*ZtI,<FPq.PU-M65XAPD]4^jOBAFW[^2#M%kC<>pd(T7I%fu5u^uT]?V=SkX
+.%L3h]>DKjSd=/="o6M1o`p"-9+1fNJpIMahWGEen"'s6q8TT,Q#1/gS/30N8`8[[B85C4T1V+!\FkSH
+_t^6;_5JIVR/=f%!2q5OmY=O;(u>qOrkljBXoJCZ4/[ir"aK,-Q_]BqSInn?]-o6.oD;JPoacb]'g"d$
+obRT.?k*eO!2-"AlJE$NB3d2/Sosj'.0I@q[k%puhgKOTqhi@,d</e+6_A`SZsNW;)I'p=jK-/:59KrF
+-t3/VPU-M65XCq@Y]t5V(qDHq#(V(8&9;/Th?s%oeapXLf;qc+5PfV<STA-T>IH*i!!"^nM#dTQd(o`*
+X+*&.I,Th-YkOcVVMkQ-DHRg*mAb)[,p.Rc[9E<XdA:&7pUNTM*tSE3'JTRfWnH8Li1L(3SH6T]hu0*"
+H2[$4n%1)J?4hS=VX).B&*s\+F[&Tq9==uR*rtF_0`V3r&d&-,T\eru,67Z<f=rCkIcItQhj%i0*#8*Y
+gL$08_SGF)SIDXJ]0c6n#ljrZa,'fs:f)'1a9itD!'GK(&&JQq]J]Ure*6+J9rl/843eA_qkoo^%N<Us
+K>#fB!!%P[9FLoOC:[t;YOM3cs,b4u%sGTAr92lC_Q?na:N,%Y_=40lD@`N2fU!r9g_"SjJEdXFF.='I
+!!W$rrttjq"df0ArO3g9&)4:U+0N=q.%L7l5>*[.d[i.Arn]>Kk&"gCdAF-[hPHq9%gW.TMAQ<nAVgEf
+:s]60!QOP&)$#-O+9+3gF5od=qWh4;0A\AqQ>HLt39?m,UkuQE):k@%9??BO!!'gi-O'Q96,W<GLRe(m
+>Q)GI0>/suL4@JV#h^`dKpt#S"eWIe[,1G">'K8V@:\?:OO[\<!._UR$ikfmZMO##!:>nu=oIsNIos8K
+U@>l;s!+&Cj$P8."V,t?iQsW0b4quBWAaf6rW*%M6P0D#TI_et!(t?74hP/i(gFF#[9E<X1Yso*?Mp'1
+KgjUA3G%#2onEiAc4UIW55\An^#jl"[UNmj?PinG!1:+2!!&spHYL5.!8=imor<Afl0k/O-iNuaiFUVi
+/Y)Xmc_Qc.rG'DiOP^g/2IqK^@thoe+96@/@K6BBPgr!:mY11r2hg&5?iBtPl(j5e*1hN-VQf!i9>WKf
+fTK#*X1Q:5484H!0+d\HT`>&mF.='I!!VJCJF)Pc^3Y!<^$Z\F`?4IV0DW4Cl028c%2f9='&]K[4d^7Z
+^r0BbLUE%!Vu4f!Im="l:rE>6-qasKJ3*Bg#ABa`B?=J(`iYqWhBQb!+$UKHqP?@6=dS$1SpC.WO>d;'
+4TVFp^G@>fk68>q^An66F-%4=!!W&h":0::Iq!ZKPW(fJQMejgl/dD9BD@Iih%FaaE-UL-mKpf"Sd_`B
+mL/i`+IE`@!-=YI!!!2qh?2!YJ5bh9gTpt5^$Vf'p`iRfP<XOub#X)hFoJ;c\Hb*7BB\^h&-Mt5R'X^2
+!%:JK!.[+VhZE.o%WL,RU%R^Je*&meKuG-^4NtG,kM_Y`IZfFLq,$9[").E?#l3LrLTV'B!W^$+,mF?7
+.@l1nZgIeUF+AYuT>`s(!*JmX#K"h8*Y.!T65+9_,34EMZ/s`(k5YK9B8HWh:e,H[T.9g,17ad+3aDbn
+F`5FWI:p3*13Auf/H4O&KN$be)=jM0For$''ek[]g]I\03CjPYJ5Qm0q<t<[;l.67]3Ach:MK:tO.X0G
+STVbZaGSk<'Nk+A:PHG63-"(tU&1mrc(MWY!-=#7!!$Se!<>q^DoM/dd!)&]/DCq$Fh`?sJ')OK%!frZ
+X+,9s#jZqXDeQiSYpn-<#4haYri46o!&K3-?u?MX!2+q]<;b,i>=*P0DslJ+G5bk?^m$c?RW;MLlMT[a
+_n[5p0YVjWaBod197PuO!<=N@$ikg/e1'on=mOgdn3Y^cI%d20oAclpV;/HH1]X'@=[t[CcN''(+8b6>
+^kjpmKMKLY^@IVIUA+Ju]70h-#@[Z5PU-M6^qc>NXA9r%pD3KS^00G_<ofeDZbP)#Vt]>1Ioc&$a.K=O
+#,\cB1Z&K!D1QT,cOms`-i\JT?c<8#@nI.0J.pGV,2P,EB9kU8/`l@,gUUfY?$:9"^Ji^]Dt8,;H[AQf
+E2I,1r`!MSE;LGpDt7Ockj7J.+!Pebp3Wfej*sr,3)PJ4!,s-N[<<XhJnOK=CrfE(ekQBU^3rThheDs\
+q*>MccMZAWgH0\RVdrS;s%ftEk;!NG_.RHZ0+7i%Q5BT%-_dB;i3QamRp!RK.t5&F+'cj!'_fn^j\IJ_
+G&Zj:PjB8fHhtnB!NT5.!T9:l"opnk@K6B:J7%T`r6/'q>K=@PHq)XMnGN6H'g0h@B0CrM_#`Kh&-Dpj
+7/*ak_E6!@r2dIuJ%CX^k#2/:;QbTR_!rNO!5QB0qQeuTRf8E'otC%s^jhm9Z$^bFhTe4`1dMNMJ?m)n
+!#RggHZhVZMeA!`RD$=YX8/FrHLLP(mf2njkOji7M#^p[M#dT1?k0Z$T-_5Kmf(T)EG"t60'auK!$#'L
+!!!G-K:D&MhD9Ym9HSXdmr67Zqr7T/=7VSu!,.0*!!!,cM#7#(/cFAso4N-SY'L=;]:5toNW1F-TGfNb
+!6PoV!+<#OVUj'5UjJn@5O50E,9H&-rYGQbZGZ_C(i0EnqP/>K5J,eNr9askp+N\C%fg[4(]XONbeD2K
+cpRdW<;_AmoqsbB^"*F=3D0b\J-q<AnRj]K47EU7O^ILTo`-[IM#dTQQ5BT%V&]&Ks1q'M%T2O&J(ENP
+#6Y#:7190H$>/P`hgOX:kdj!"P@)96J.n"]!!%-]9p`Ut*2__2jTbc5#Vc;Zaq=dVTTg\Xr1CC\X7uZK
+!5nj;W8hhYs0Gc+=WdNVmKW_>+>Eir8suLX^iW^DT_*Gh"17e-J3b=_!'iD3R/M4?=8i2-@#+g`:mMpu
+!2UZ\*mg$%!&XZe!.\F9(]XQd*<#kdrhgVqrrN0#S@HK;!%?smp]"kD!MK&e^kk_n!._An!!"G2Ls:Kt
+lb8,S!&-s^!!&s0f&m#h:'"t[rtbY8i5?uI!'ihQa(O00S<^Yr!!>\!!.[+VS,;R`!4.u?qu6XM=Mt1>
+-qasKJ:`+)!Z]u2i/dt)=$QaFnVI8H:s`W_"F(CV!/!uS!.]Y21F'[u5QDX;@K6Cm,mF?72)@`+*AIP=
+%KHK]64<jEJr\V+@/?^M;ZHe70Ob"^'QiEu!,_l?^jm%"!2(7>!<JiE0`V3r&d&-,TVEDFS,kn2#CsW7
+"opnS8,4Pu!!%Pc,6e-55t?8@cojVo(cYt)!0ec6!'hS%gB&?D!,)rQ!!>\!!._?bpDfj8q?m9'0Q=r1
+!%@0k]'hO"!#-R\!'j[3M`+:4\1sBc!!%.t!<>r^(]XPIN@rls3alFD-7o9!TFN[V!6Y0<pWNt'~>
+
+%AXGEndBitmap
+GR
+GR
+%%Trailer
+%%Pages: 1
+%%EOF
