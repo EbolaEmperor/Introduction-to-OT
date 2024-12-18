@@ -147,3 +147,19 @@ His algorithm decomposes the simulated object into a set of convex cells called 
 ### Page 23
 
 Zhao et al, including Xianfeng Gu, present a novel area-preservation mapping method using the optimal mass transport technique, based on the Monge-Brenier theory. Their optimal transport map approach is rigorous and solid in theory, efficient and parallel in computation, yet general for various applications. By comparison with the conventional Monge-Kantorovich approach, their method reduces the number of variables from $O(n^2)$ to $O(n)$, and converts the optimal mass transport problem to a convex optimization problem, which can then be efficiently carried out by Newton’s method. Their framework, by combining conformal mapping and optimal mass transport mapping, serves as a powerful tool for a broad range of applications in visualization and graphics, especially for medical imaging.
+
+### Page 24
+
+Domain adaptation is a technique in machine learning where a model trained on one type of data is adjusted to work well on another. The goal is to make the model perform well on new data, even if it was not explicitly trained on that new data. For example, firstly training with images of computers in Amazon.com, then use domain adaptation to derive another model, which can identify computers in your classroom. Domain adaptation is one of the most challenging tasks of modern data analytics.
+
+This is a famous work which has more than 1000 citations. Flamary and Tuia propose a regularized unsupervised optimal transportation model to perform the alignment of the representations in the source and target domains. They learn a transportation plan matching both PDFs, which constrains labeled samples of the same class in the source domain to remain close during transport. This way, they exploit at the same time the labeled samples in the source and the distributions observed in both domains.
+
+Figure 21 shows the numerical test in a toy example. The main idea is, training only in the source domain, then use the OT-based algorithm to adapt the model into the rotated domain. The method works well when the rotation angle is not too large.
+
+### Page25
+
+In summary, optimal transport is a mathematical framework that helps us understand the most efficient way to move resources from one place to another. It involves finding the best ‘transport plan’ that minimizes the cost, considering both the distance and the amount being moved. It has many computation methods and a wide range of applications. 
+
+We believe that, in today's AI era, optimal transport will attract increasing attention. Perhaps one day, based on the optimal transport, people will be able to develop powerful and interpretable AI models. 
+
+That's all. Thank you.
