@@ -8,7 +8,7 @@ And this is what we're going to discuss today. The theory, computation and appli
 
 ### Page 2
 
-Here is an overview of the optimal transport. The **principal concern** of OT is transporting a probability measure to another in an optimal way. Or, measuring the distance between two probability measures. 
+Here is an overview of the optimal transport. The **principal concern** of OT is to transport a probability measure to another in an optimal way, or to measure the distance between two probability measures. 
 
 The OT problem was first introduced by **Monge** when he was thinking how to move some mound of soil to other places in an optimal way. The first mathematical formulation of OT was introduced by **Kantorovich** in 1942. He classifies OT into 3 types, as shown in figure 1. He proves that the OT mapping can be found by maximizing a certain functional. **Brenier's theorem** is a landmark result in OT theory. It shows the existence, monotonicity, and uniqueness of the OT mapping with respect to the quadratic cost function between two given probability measures. **Gu and his collaborators** combined differential geometry, Monge-Ampère equations, and OT theory to develop a geometric variational algorithm for OT mappings, which are applied in explainable deep learning and other areas.
 
@@ -30,7 +30,7 @@ Here's another OT problem: the allocation problem, which is a discrete problem.
 
 There are some steel coils to be transported from warehouses to factories. The transport cost is $1 per coil and per kilometer. How to minimize the total cost?
 
-Let's assume the $i$-th warehouse has $a_i$ coils and the $j$-th factory needs $b_i$ coils. And assume the distance between the $i$-th warehouse and the $j$-th factory is $d_{ij}$. The formulation is: find a **transport matrix** $v_{ij}$ to minimize the equation $(3)$. And the matrix should satisfy the equation $(4)$. In fact, $v_{ij}$ means how many coils are transpoted from  the $i$-th warehouse to the $j$-th factory.
+Let's assume the $i$-th warehouse has $a_i$ coils and the $j$-th factory needs $b_i$ coils. And assume the distance between the $i$-th warehouse and the $j$-th factory is $d_{ij}$. The formulation is: find a **transport matrix** $v_{ij}$ to minimize the equation $(3)$. And the matrix should satisfy the equation $(4)$. In fact, $v_{ij}$ means how many coils are transported from  the $i$-th warehouse to the $j$-th factory.
 
 ### Page 6
 
@@ -62,7 +62,7 @@ Brenier shows that, in the case $\mathcal{X}=\mathcal{Y}=\R^d$ and $c(x,y)$ is t
 
 ### Page 10
 
-When the cost function is chosen to be the Euclidiean distance, we can derive the dynamic formulation as the equation $(14)$. The optimization objective function represents the energy cost through the mass-transfer process. The mass and the velocity should satisfy the consercation of mass formila, namely the equation $(15)$.
+When the cost function is chosen to be the Euclidiean distance, we can derive the dynamic formulation as the equation $(14)$. The optimization objective function represents the energy cost through the mass-transfer process. The mass and the velocity should satisfy the conservation of mass formula, namely the equation $(15)$.
 
 The dynamic formulation provides us with a new perspective. We can use this formulation to compute intermediate results at any instant conveniently. And there are some optimization methods designed to solve the dynamic formulation with the discretilization technique.
 
@@ -100,7 +100,7 @@ Now for an arnitary cost matrix $C$, we can write the Kantorovich problem as the
 
 Now let's introduce the idea of entropy regularization.
 
-Define the entropy function as the equation $(24)$. Then the regularized Kantorovich problem is defined by the equation $(25)$. It is in fact the original Kantorovich problem that added with a small entropy.
+Define the entropy function as the equation $(24)$. Then the regularized Kantorovich problem is defined by the equation $(25)$. It is in fact the original Kantorovich problem argumented with a small entropy.
 
 The figures show the graphs of optimal $P$s when choose different $\varepsilon$. The red plot is the density of original measure $\mu$ while the blue is the target. The cost matrix is set to be $|x_i-x_j|^2$. As we can see, the optimal $P$s satisfy marginal conditions. And it converges to the solution to original Kantorovich problrm as $\varepsilon$ being small and small. It can be shown that the difference between the original problem and the regularized problem is only $O(\varepsilon)$.
 
@@ -108,7 +108,7 @@ The figures show the graphs of optimal $P$s when choose different $\varepsilon$.
 
 Surprisingly, the regularized Kantorovich problem can be solved with a extremely simple iteration! It's called Sinkhorn iteration since the convergence is proved by Sinkhorn. And we can rebuild the transport matrix $P$ with the equation $(27)$.
 
-The figures show how the iteration works. At the begining, the matrix $P$ doesn't even satisfy marginal conditions. But as the iteration runs, we can see the matrix $P$ is converging to the optimal one. 
+The figures show how the iteration works. At the beginning, the matrix $P$ doesn't even satisfy marginal conditions. But as the iteration runs, we can see the matrix $P$ is converging to the optimal one. 
 
 It's a fast algorithm. Altschuler and his collaborators prove that the computational complexity is near-linear with respect to the reciprocal of $\varepsilon$. 
 
