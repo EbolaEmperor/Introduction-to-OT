@@ -62,48 +62,88 @@ Brenier shows that, in the case $\mathcal{X}=\mathcal{Y}=\R^d$ and $c(x,y)$ is t
 
 ### Page 10
 
-Now let's see some computation methods of OT. We will first show how to solve OT in some specific 1-D cases. Then we will introduce Sinkhorn's algorithm to show how to solve OT with an arbitary cost function in discrete case.
+When the cost function is chosen to be the Euclidiean distance, we can derive the dynamic formulation as the equation $(14)$. The optimization objective function represents the energy cost through the mass-transfer process. The mass and the velocity should satisfy the consercation of mass formila, namely the equation $(15)$.
+
+The dynamic formulation provides us with a new perspective. We can use this formulation to compute intermediate results at any instant conveniently. And there are some optimization methods designed to solve the dynamic formulation with the discretilization technique.
 
 ### Page 11
 
-Here we suppose two discrete measures in the real number space, and each with ordered supports. With the $L^p$ distance as the cost function, the OT problem is namely the $p$-Wasserstein distance. And it can be simply computed by the equation $(14)$.
-
-In fact, it's a greedy algorithm. As the figure shows, we fill the reds with blues. Consider the blues one by one from left to right. For each blue, choose the left-most red which is not full to fill in.
+Now let's see some computation methods of OT. We will first show how to solve OT in some specific 1-D cases. Then we will introduce Sinkhorn's algorithm to show how to solve OT with an arbitary cost function in discrete case.
 
 ### Page 12
 
-Here's another specific case. We suppose two continuous measures in the real number space, each with a density function. We write their cummulative distribution functions as $\mathcal{C}_\mu$ and $\mathcal{C}_\nu$. Then the one-Wasserstein distance could be simply computed by the equation $(15)$. And the Monge map is then defined by the equation $(16)$.
+Here we suppose two discrete measures in the real number space, and each with ordered supports. With the $L^p$ distance as the cost function, the OT problem is namely the $p$-Wasserstein distance. And it can be simply computed by the equation $(16)$.
+
+In fact, it's a greedy algorithm. As the figure shows, we fill the reds with blues. Consider the blues one by one from left to right. For each blue, choose the left-most red which is not full to fill in.
+
+### Page 13
+
+Here's another specific case. We suppose two continuous measures in the real number space, each with a density function. We write their cummulative distribution functions as $\mathcal{C}_\mu$ and $\mathcal{C}_\nu$. Then the one-Wasserstein distance could be simply computed by the equation $(17)$. And the Monge map is then defined by the equation $(18)$.
 
 Here we show their density functions, cumulative functions, and the Monge map. The dispacement interpolation is shown in the third figure. We can see it to understand how a probability distribution is transported to another.
 
 Of course this method could be generalized to an arbitrary $p$-Wasserstein distance. But we don't discuss today.
 
-### Page 13
+### Page 14
 
-Here's a surprising result. For 1-D Gaussians, the two-Wasserstein distance can be computed by the equation $(17)$, which is thus the Euclidean distance on the 2-D plane plotting the mean and the standard deviation of a Gaussian $\mathcal{N}(m, \sigma)$!
+Here's a surprising result. For 1-D Gaussians, the two-Wasserstein distance can be computed by the equation $(19)$, which is thus the Euclidean distance on the 2-D plane plotting the mean and the standard deviation of a Gaussian $\mathcal{N}(m, \sigma)$!
 
 So there's nothing hard for us to illustrate the displacement interpolation between two 1-D Gaussians. The right figure shows the $(m,\sigma)$ plane.
 
-### Page 14
-
-Before we introduce the generic case in 1-D space, we firstly write all measures into discrete forms. That is, for a continuous measure with density. Suppose it supports on $[0,1]$ without loss of generality. We choose an uniform grid on the interval $[0,1]$. And define a discrete measure as the equation $(18)$. Clearly, we can approximate the measure $\mu$ with this discrete measure. And the approximation gets better and better when the grid be finer and finer. Furthermore, this discretization technique can be also used in multi-dimensional spaces.
-
-Now for an arnitary cost matrix $C$, we can write the Kantorovich problem as the equation $(20)$, where the transport matrix $P$ satisfies marginal conditions in the equation $(21)$.
-
 ### Page 15
 
-Now let's introduce the idea of entropy regularization.
+Before we introduce the generic case in 1-D space, we firstly write all measures into discrete forms. That is, for a continuous measure with density. Suppose it supports on $[0,1]$ without loss of generality. We choose an uniform grid on the interval $[0,1]$. And define a discrete measure as the equation $(20)$. Clearly, we can approximate the measure $\mu$ with this discrete measure. And the approximation gets better and better when the grid be finer and finer. Furthermore, this discretization technique can be also used in multi-dimensional spaces.
 
-Define the entropy function as the equation $(22)$. Then the regularized Kantorovich problem is defined by the equation $(23)$. It is in fact the original Kantorovich problem that added with a small entropy.
-
-The figures show the graphs of optimal $P$s when choose different $\varepsilon$. The red plot is the density of original measure $\mu$ while the blue is the target. The cost matrix is set to be $|x_i-x_j|^2$. As we can see, the optimal $P$s satisfy marginal conditions. And it converges to the solution to original Kantorovich problrm as $\varepsilon$ being small and small. It can be shown that the difference between the original problem and the regularized problem is only $O(\varepsilon)$.
+Now for an arnitary cost matrix $C$, we can write the Kantorovich problem as the equation $(22)$, where the transport matrix $P$ satisfies marginal conditions in the equation $(23)$.
 
 ### Page 16
 
-Surprisingly, the regularized Kantorovich problem can be solved with a extremely simple iteration! It's called Sinkhorn iteration since the convergence is proved by Sinkhorn. And we can rebuild the transport matrix $P$ with the equation $(25)$.
+Now let's introduce the idea of entropy regularization.
+
+Define the entropy function as the equation $(24)$. Then the regularized Kantorovich problem is defined by the equation $(25)$. It is in fact the original Kantorovich problem that added with a small entropy.
+
+The figures show the graphs of optimal $P$s when choose different $\varepsilon$. The red plot is the density of original measure $\mu$ while the blue is the target. The cost matrix is set to be $|x_i-x_j|^2$. As we can see, the optimal $P$s satisfy marginal conditions. And it converges to the solution to original Kantorovich problrm as $\varepsilon$ being small and small. It can be shown that the difference between the original problem and the regularized problem is only $O(\varepsilon)$.
+
+### Page 17
+
+Surprisingly, the regularized Kantorovich problem can be solved with a extremely simple iteration! It's called Sinkhorn iteration since the convergence is proved by Sinkhorn. And we can rebuild the transport matrix $P$ with the equation $(27)$.
 
 The figures show how the iteration works. At the begining, the matrix $P$ doesn't even satisfy marginal conditions. But as the iteration runs, we can see the matrix $P$ is converging to the optimal one. 
 
 It's a fast algorithm. Altschuler and his collaborators prove that the computational complexity is near-linear with respect to the reciprocal of $\varepsilon$. 
 
 However, Sinkhorn iteration suffers numerical overflow when $\varepsilon$ is too small. The reason is some elements of the matrix $K$ may be too small to be a floating point number. To avoid this, we can compute the iteration in the log-domain. We don't discuss details today.
+
+### Page 18
+
+Although the initial motivations of Monge and Kantorovitch were respectively military and economic, the optimal transport finds countless applications, both theoretical but also more concrete. For example, full seismic waveform inversion, viscous fluid dynamics, quantum chemistry, etc. OT has recently become the focus of more applied problems in data sciences, especially to solve problems in image processing and machine learning.
+
+### Page 19
+
+Here's a simple application in 2-D shape interpolation. 
+
+People always enjoy smooth animations. To smoothly transform this Kunkun image into a chick image, we can use the intermediate results of optimal transport. The top row shows the effects of fading in and fading out while the second row uses optimal transport. As a comparison, the computational cost in the second row is much higher than in the first row. But clearly, its smoothness is far superior to that of the first row.
+
+Figure 14 shows how to compute the barycenters of four 2-D shapes. Theoretically, the barycenter is the midpoint of the four shapes in the sense of Wasserstein distance. Visually, the barycenter is the result of blending the four shapes together. This idea can be used for image fusion.
+
+### Page 20
+
+Here's a famous problem: the color transfer problem.
+
+The problem consists in modifying a source image $I_X$ so that its colors match the colors of a target image $I_Y$. More precisely, find a new image $I_Z$ whose geometry is as close as possible to the source image $I_X$ and whose color distribution is close to the one of the exemplar image $I_Y$. The color histogram of such an image $I_X$ can be estimated using the empirical distribution $\mu_X$. The goal of color transfer algorithms is to compute a transformation $T$ such that for all pixel $x \in \Omega$, $I_Z(x) = T (I_X(x))$, where the new empirical distribution $μ_Z$ is close or equal to $μ_Y$.
+
+The third picture shows the result of applying $T$ to $I_X$, where $T$ is computed using the Optimal Transport framework. The second row displays the 2-D projection of the 3-D distribution of pixels $\mu_X$ and $\mu_Y$.
+
+### Page 21
+
+Here's another example of color transfer using the OT framework, where the image of Eiffel tower is modified to different color styles.
+
+### Page 22
+
+This application is from an article published in JCP. The author Bruno Lévy uses partial OT to simulate the fluid dunamics with free boundary.
+
+His algorithm decomposes the simulated object into a set of convex cells called a Laguerre diagram, parameterized by the position of $N$ points in 3-D and $N$ additional parameters that control the volumes of the cells. These parameters are found as the unique solution of the semi-discrete Monge-Ampère equation, which is a stemming from the OT theory. In his article, this setting is extended to objects with free boundaries and arbitrary topology, evolving in a domain of arbitrary shape, by solving a partial optimal transport problem. The resulting Lagrangian scheme makes it possible to accurately control the volume of the object, while precisely computing the intersections with the domain boundary, the interactions, the collisions, and the changes of topology.
+
+### Page 23
+
+Zhao et al, including Xianfeng Gu, present a novel area-preservation mapping method using the optimal mass transport technique, based on the Monge-Brenier theory. Their optimal transport map approach is rigorous and solid in theory, efficient and parallel in computation, yet general for various applications. By comparison with the conventional Monge-Kantorovich approach, their method reduces the number of variables from $O(n^2)$ to $O(n)$, and converts the optimal mass transport problem to a convex optimization problem, which can then be efficiently carried out by Newton’s method. Their framework, by combining conformal mapping and optimal mass transport mapping, serves as a powerful tool for a broad range of applications in visualization and graphics, especially for medical imaging.

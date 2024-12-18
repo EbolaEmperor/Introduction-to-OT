@@ -233,3 +233,20 @@
         \end{equation}
     \end{Thm}
 \end{frame}
+
+\begin{frame}{Dynamic formulation}
+    \footnotesize
+    In the case $\mX = \mY = \R^d$, and $c(x, y) = \|x - y\|_2$, 
+    the optimal transport distance $\wass_2^2(\mu, \nu) = \mL_c(\mu,\nu)$
+    can be defined as
+    \begin{equation}
+        \wass_2^2(\mu,\nu) = \min_{(\alpha_t,v_t)_t} \int_0^1 \int_{\R^d}
+        \| v_t(x) \|^2 \;d\alpha_t(x)\;dt,
+    \end{equation}
+    where $\alpha_t$ is a scalar-valued measure and $v_t$ a vector-valued measure
+    which satisfy the conservation of mass formula,
+    \begin{equation}
+        \frac{\partial \alpha_t}{\partial t} + \nabla\cdot(\alpha_t,v_t) = 0,
+    \end{equation}
+    and the boundary conditions $\alpha_0=\mu$ and $\alpha_1=\nu$.
+\end{frame}

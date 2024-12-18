@@ -1,20 +1,20 @@
 global n;
 n = 100;
-eps = 1e-2;
+eps = 0.1;
 
-zju = imread("../png/zju.jpg");
-zju = rgb2gray(zju);
-zju = imresize(zju, [n, n]);
+origin = imread("../png/cat.png");
+origin = rgb2gray(origin);
+origin = imresize(origin, [n, n]);
 
-mu = double(reshape(255 - zju, [n * n, 1])) + eps;
+mu = double(reshape(255 - origin, [n * n, 1])) + eps;
 s1 = sum(mu);
 mu = mu / s1 * n * n;
 
-ustc = imread("../png/ustc.jpg");
-ustc = rgb2gray(ustc);
-ustc = imresize(ustc, [n, n]);
+target = imread("../png/heart.jpg");
+target = rgb2gray(target);
+target = imresize(target, [n, n]);
 
-nu = double(reshape(255 - ustc, [n * n, 1])) + eps;
+nu = double(reshape(255 - target, [n * n, 1])) + eps;
 s2 = sum(nu);
 nu = nu / s2 * n * n;
 
@@ -29,20 +29,21 @@ C = zeros(n*n, n*n);
 for i = 1 : n*n
     C(i,:) = sum((pos - pos(:,i)).^2);
 end
+C = C / (n * n);
 
-[cost, P] = sinkhorn(mu, nu, C, eps, 1e-5);
+[cost, P] = sinkhorn(mu, nu, C, eps, 1e-5, 100000);
 
 for t = 0 : 0.1 : 1
     t
-    M = timeInterp(mu, P, t) * ((1-t) * s1 + t * s2) / (n * n) - eps
+    M = timeInterp(P, t) * ((1-t) * s1 + t * s2) / (n * n) - eps;
     M = floor(255 - M);
     clf;
-    imshow(M);
+    imshow(M');
     fname = sprintf("interp%.1f.epsc", t);
     saveas(gca, fname);
 end
 
-function M = timeInterp(mu, P, t)
+function M = timeInterp(P, t)
     global n;
     global pos;
     l = n * n;
